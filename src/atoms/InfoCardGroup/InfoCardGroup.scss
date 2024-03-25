@@ -1,0 +1,213 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.InfoCardGroup {
+    display: grid;
+    grid-gap: $sp_inner_cards;
+
+    &.size-2 {
+        grid-template-columns: 1fr 1fr;
+
+        @include tablet-portrait {
+            grid-template-columns: 1fr;
+            grid-gap: $sp_inner_cards_mobile;
+        }
+    }
+    &.size-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include tablet-portrait {
+            grid-template-columns: 1fr;
+            grid-gap: $sp_inner_cards_mobile;
+        }
+    }
+    &.size-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+
+        @include tablet-portrait {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+
+    @include tablet-portrait {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px 0;
+        margin-left: -$body_gutter_mobile;
+        margin-right: -$body_gutter_mobile * 2;
+        padding-left: $body_gutter_mobile;
+        padding-right: $body_gutter_mobile * 2;
+        width: 120%;
+
+        display: block;
+
+        .InfoCard,
+        .TeamCard {
+            width: 300px;
+            min-width: 300px;
+            min-height: 400px;
+            white-space: normal;
+            margin-right: 20px;
+            display: inline-block !important;
+            vertical-align: top;
+        }
+    }
+
+    &.layout-shifted,
+    &.layout-shifted-negative {
+        $dist: -50px;
+        position: relative;
+
+        .InfoCard,
+        .TeamCard {
+            &:nth-child(odd) {
+                top: $dist;
+            }
+
+            @include tablet-portrait {
+                &:nth-child(odd) {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    &.layout-shifted {
+        top: 90px;
+
+        @include tablet-portrait {
+            top: 60px;
+            margin-top: -60px;
+        }
+    }
+
+    &.layout-shifted-negative {
+        top: -50px;
+
+        @include tablet-portrait {
+            top: -30px;
+        }
+    }
+
+    &.layout-cascade {
+        $dist: -40px;
+
+        &.size-2 {
+            margin-top: -$dist * 2;
+        }
+
+        &.size-3 {
+            margin-top: -$dist * 3;
+        }
+
+        &.size-4 {
+            margin-top: -$dist * 4;
+        }
+
+        .InfoCard,
+        .TeamCard {
+            &:nth-child(3n + 1) {
+                top: $dist * 3;
+            }
+            &:nth-child(3n + 2) {
+                top: $dist * 2;
+            }
+            &:nth-child(3n + 3) {
+                top: $dist * 1;
+            }
+        }
+
+        @include tablet-portrait {
+            position: relative;
+            top: -60px;
+            margin-bottom: -60px;
+
+            .InfoCard,
+            .TeamCard {
+                $dist: 0px;
+                top: $dist;
+
+                &:nth-child(3n + 1),
+                &:nth-child(3n + 2),
+                &:nth-child(3n + 3) {
+                    top: $dist;
+                }
+            }
+
+            &.size-2,
+            &.size-3,
+            &.size-4 {
+                margin-top: 30px;
+            }
+
+            &.size-4 {
+                top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.variant-mobileInline {
+        &.layout-cascade {
+            @include mobile {
+                &.size-2,
+                &.size-3,
+                &.size-4 {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        @include mobile {
+            overflow-x: auto;
+            white-space: normal;
+            padding: 20px 0;
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+            top: inherit;
+
+            .InfoCard,
+            .TeamCard {
+                width: 100%;
+                min-width: auto;
+                min-height: auto;
+                white-space: normal;
+                margin-right: 0;
+                margin-bottom: 20px;
+                display: inline-block !important;
+                vertical-align: top;
+            }
+        }
+    }
+
+    &.variant-mobileTwoColumn {
+        @include tablet-portrait {
+            overflow-x: auto;
+            white-space: normal;
+            padding: 0;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            top: inherit;
+
+            grid-template-columns: 1fr 1fr !important;
+            grid-gap: $sp_inner_cards_mobile !important;
+
+            .InfoCard,
+            .TeamCard {
+                width: auto;
+                min-width: auto;
+                min-height: auto;
+                white-space: normal;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                display: inline-block !important;
+                vertical-align: top;
+            }
+        }
+    }
+}

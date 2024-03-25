@@ -1,0 +1,100 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.ProviderInfoCard {
+    position: relative;
+
+    .FlashyHighlight {
+        width: auto;
+        border-radius: 20px;
+        padding: 5px 20px 100px 20px;
+        position: absolute;
+        z-index: 1;
+        top: -31px;
+        line-height: 1;
+        color: $c-white;
+        background: $c-pink-gradient;
+        min-width: 160px;
+
+        > * {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        i {
+            position: relative;
+            top: 3px;
+        }
+
+        span {
+            font-size: 14px;
+            @include font-weight('medium');
+        }
+
+        @include mobile {
+            padding: 5px 20px 100px 20px;
+            top: -28px;
+        }
+    }
+
+    .Module {
+        position: relative;
+        z-index: 3;
+        // overflow: hidden;
+    }
+
+    .ProviderInfoCard--link {
+        transition: all 175ms $light-elastic;
+        display: block;
+        will-change: transform;
+
+        @include above-mobile {
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+
+        &:active {
+            transform: scale(0.98);
+            opacity: 0.7;
+        }
+    }
+
+    @include above-tablet-portrait {
+        &.second-rank {
+            top: 30px;
+        }
+        &.third-rank {
+            top: 60px;
+        }
+    }
+
+    &.first-rank {
+        margin-bottom: 30px;
+    }
+
+    &.second-rank {
+        margin-bottom: 30px;
+    }
+
+    &.third-rank {
+        margin-bottom: 60px;
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.ProviderInfoCard--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .Badge {
+        max-width: 70%;
+    }
+}
+
+.ProviderInfoCard--sharing {
+    margin-right: -6px;
+}

@@ -1,0 +1,64 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.SocialSharing {
+    &.theme-dark {
+        .SocialSharing--icon {
+            color: $c-green-4;
+        }
+    }
+    &.theme-white {
+        .SocialSharing--icon {
+            color: $c-white;
+        }
+    }
+
+    &.size-l {
+        font-size: 3rem;
+        padding: 20px 0;
+
+        @include mobile {
+            font-size: 2.3rem;
+        }
+    }
+
+    &.size-s {
+        font-size: 1.4rem;
+        padding: 0;
+
+        @include mobile {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.SocialSharing--list {
+    display: inline-block;
+
+    button {
+        display: inline-block;
+
+        .size-l & {
+            padding: 5px 15px !important;
+
+            @include mobile {
+                padding: 5px 10px !important;
+            }
+        }
+
+        .size-s & {
+            padding: 2px 5px !important;
+
+            @include mobile {
+                padding: 1px 6px !important;
+            }
+        }
+    }
+}
+
+.SocialSharing--icon {
+    transition: all 175ms $light-elastic;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,57 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.BookingSessionPayment {
+    * {
+        @include main-font();
+        // font-weight: 500;
+    }
+
+    #card-element {
+        border-radius: 12px;
+        padding: 22px 16px;
+        border: 1px solid rgba(50, 50, 93, 0.1);
+        // height: 44px;
+        width: 100%;
+        background: white;
+
+        .error svg .base {
+            fill: #fff;
+        }
+
+        .error svg .glyph {
+            fill: $c-error;
+        }
+
+        .error .message {
+            color: #fff;
+        }
+
+        .success .icon .border {
+            stroke: $c-success;
+        }
+
+        .success .icon .checkmark {
+            stroke: #fff;
+        }
+
+        .success .title {
+            color: #fff;
+        }
+
+        .success .message {
+            color: $c-success;
+        }
+
+        .success .reset path {
+            fill: #fff;
+        }
+    }
+}
+
+.BookingSessionHeader-title--linethrough {
+    text-decoration: line-through;
+}
+
+.BookingSessionHeader-redeem-code {
+    color: $c-rose-4;
+}

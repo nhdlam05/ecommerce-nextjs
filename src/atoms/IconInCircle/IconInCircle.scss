@@ -1,0 +1,105 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.IconInCircle {
+    background-color: $c-white;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 175ms $elastic;
+
+    /*
+        Size
+    */
+    &.size-l {
+        $s: 170px;
+        $sm: 120px;
+
+        width: $s;
+        height: $s;
+
+        @include mobile {
+            width: $sm;
+            height: $sm;
+        }
+    }
+    &.size-m {
+        $s: 140px;
+        $sm: 90px;
+
+        width: $s;
+        height: $s;
+
+        @include mobile {
+            width: $sm;
+            height: $sm;
+        }
+    }
+    &.size-s {
+        $s: 110px;
+        $sm: 60px;
+
+        width: $s;
+        height: $s;
+
+        @include mobile {
+            width: $sm;
+            height: $sm;
+        }
+    }
+
+    @include mobile {
+        .IconInCircle--icon {
+            transform: scale(0.7);
+        }
+    }
+
+    /*
+        ELEVATION
+    */
+    &.elevation-s {
+        box-shadow: $bs-short;
+    }
+    &.elevation-m {
+        box-shadow: $bs-large;
+    }
+
+    /*
+        theme
+    */
+
+    &.theme-dark {
+        .IconInCircle--icon {
+            color: $c-green-4;
+        }
+    }
+
+    /*
+        Align
+    */
+    &.align-center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*
+        Interactivity
+    */
+
+    &:active {
+        transform: translateY(4px);
+    }
+
+    @include above-mobile {
+        &:hover {
+            transform: translateY(2px);
+        }
+    }
+}
+
+.IconInCircle--icon {
+    will-change: transform;
+    transition: all 175ms $elastic 40ms;
+    transform-origin: center center;
+}

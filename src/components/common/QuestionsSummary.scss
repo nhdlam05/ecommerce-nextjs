@@ -1,0 +1,19 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.QuestionsSummary--question {
+    & + li {
+        border-top: 1px solid $c-light-gray;
+    }
+
+    p {
+        white-space: pre-line;
+    }
+
+    .EmotionIcon {
+        margin-bottom: 40px;
+        ion-img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

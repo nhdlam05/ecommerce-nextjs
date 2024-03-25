@@ -1,0 +1,10 @@
+.BookingConsentAgreement {
+    .BookingConsentAgreement--subtitle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        p {
+            max-width: 400px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.ProviderPriceList {
+    .ProviderPriceList--offering {
+        border-radius: $brad-xl;
+        background-color: rgba($c-beige-1, 0.3);
+        padding: $chat_padding;
+        height: 100%;
+    }
+    .ProviderPriceList--block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,25 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.SocialMediaLinks {
+    margin-top: 20px;
+}
+
+.SocialMediaLinks--item {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        color: $c-primary;
+        font-size: 48px;
+        transition: opacity 140ms ease;
+
+        &:hover,
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.AsideLayout {
+    position: relative;
+    top: -137px;
+    display: grid;
+    grid-template-columns: 27% 72%;
+    // grid-template-rows: 10vw 30vw 10vw;
+    grid-gap: 2.5em;
+
+    @include tablet-portrait {
+        display: block;
+
+        .Avatar {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .Section.spacing-s {
+            padding-bottom: 0;
+        }
+
+        .Title.size-s {
+            // font-size: 28px;
+        }
+    }
+
+    @include mobile {
+        top: -110px;
+    }
+}

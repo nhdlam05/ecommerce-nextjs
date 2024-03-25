@@ -1,0 +1,100 @@
+@import 'aepsy-ui/styles/utils.scss';
+.Editor {
+    border-radius: $brad-m;
+    background-color: $c-white;
+    border: 1px solid $bor-default;
+    transition: $trans-all-default;
+    box-shadow: none;
+    font-family: 'TTNormsPro';
+    font-size: 1rem;
+    color: $c-text;
+
+    .Editor--menu {
+        padding: 0px 4px;
+        background: #f6f3ea;
+        border-radius: 8px;
+        box-shadow: $bs-short;
+        width: fit-content;
+    }
+
+    .Editor--shorthandWrapper {
+        background: #f6f3ea;
+        border-radius: 8px;
+        box-shadow: $bs-short;
+    }
+
+    .Editor--content {
+        padding: 12px 24px;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .Editor--menuFooter {
+        margin: 16px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    > * + * {
+        margin-top: 0.75em;
+    }
+
+    ul,
+    ol {
+        padding: 0 1rem;
+    }
+
+    li {
+        list-style: disc;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.1;
+    }
+
+    code {
+        background-color: rgba(#616161, 0.1);
+        color: #616161;
+    }
+
+    pre {
+        background: #0d0d0d;
+        color: #fff;
+        font-family: 'JetBrainsMono', monospace;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+
+        code {
+            color: inherit;
+            padding: 0;
+            background: none;
+            font-size: 0.8rem;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    blockquote {
+        padding-left: 1rem;
+        border-left: 2px solid rgba(#0d0d0d, 0.1);
+    }
+
+    hr {
+        border: none;
+        border-top: 2px solid rgba(#0d0d0d, 0.1);
+        margin: 2rem 0;
+    }
+
+    em {
+        font-style: italic;
+    }
+}

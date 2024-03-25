@@ -1,0 +1,27 @@
+.UserConsentAgreement {
+    .Module.variant-modal {
+        padding-bottom: 14px;
+    }
+
+    .UserConsentAgreement--item {
+        display: flex;
+        .Icon {
+            margin-right: 16px;
+        }
+        .MarkdownText {
+            margin-top: -16px;
+            height: 98px;
+            overflow: hidden;
+            transition: all 0.2 ease-out;
+
+            li {
+                padding-bottom: 0 !important;
+            }
+        }
+        &.read-more {
+            .MarkdownText {
+                height: 100%;
+            }
+        }
+    }
+}

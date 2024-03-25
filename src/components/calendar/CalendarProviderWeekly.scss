@@ -1,0 +1,12 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.CalendarProviderWeekly {
+}
+
+.CalendarProviderWeekly--header {
+    padding: $itemPadding;
+
+    @include mobile {
+        padding: $itemPaddingMobile;
+    }
+}

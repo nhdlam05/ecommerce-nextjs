@@ -1,0 +1,549 @@
+[
+    {
+        "id": "e6d51918-a48d-521a-a915-ef7928e5abc2",
+        "name": "KPT",
+        "coverages": [
+            {
+                "uniqueKey": "HtyPP90qM",
+                "type": "Krankenpflege-Plus",
+                "amount": "Max. CHF 50/ Sitzung bis CHF 1600 innerhalb 5 Kalenderjahren"
+            },
+            {
+                "uniqueKey": "wne5X9huA",
+                "type": "Krankenpflege-Comfort",
+                "amount": "Max. CHF 50/ Sitzung bis CHF 1600 innerhalb 5 Kalenderjahren"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 58 310 91 11",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.kpt.ch/",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr - 18.00 Uhr und Sa. von 8.00 Uhr - 12.00 Uhr"
+    },
+    {
+        "id": "c07c222d-9ed9-5d76-be68-e28b0379c3ef",
+        "name": "CSS",
+        "coverages": [
+            {
+                "uniqueKey": "gqm88HoC0",
+                "type": "CSS-Standardversicherungen",
+                "amount": "CHF 40/ Sitzung, bis 20 Sitzungen/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "75Lt0uwSr",
+                "type": "CSS-Standardversicherungen plus",
+                "amount": "CHF 40/ Sitzung, bis 20 Sitzungen/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "ZPT4gtK2u",
+                "type": "myFlex BALANCE",
+                "amount": "75% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "RW2vTrLba",
+                "type": "myFlex PREMIUM",
+                "amount": "75% der Therapiekosten, bis CHF 3000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "cqDLONCDT",
+                "type": "Intras UNO+",
+                "amount": "90% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "yfFKGxS-t",
+                "type": "Intras DUE+",
+                "amount": "90% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "7ob6fqrpZ",
+                "type": "Sanagate Ambulant Optima",
+                "amount": "75% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<ul>\n<li>Therapeuten/innen, die sich auf der CSS-Liste befinden (muss bei Versicherung angefragt werden). Psychotherapeuten werden nach geographischer Nähe zugewiesen.</li>\n</ul>\n",
+        "primaryPhoneNumber": "+41 844 277 777",
+        "requiresDoctorNote": false,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.css.ch/de/leistungserbringer/partnerschaft/kontakt.html",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 18.00 Uhr"
+    },
+    {
+        "id": "c02ae05b-7856-5daa-92b1-80862156daaa",
+        "name": "Helsana",
+        "coverages": [
+            {
+                "uniqueKey": "lawKbP0qR",
+                "type": "TOP",
+                "amount": "75%, max. CHF 3'000/Jahr"
+            },
+            {
+                "uniqueKey": "RFQc_iytL",
+                "type": "COMPLETA",
+                "amount": "75%, max. CHF 4'500/Jahr"
+            },
+            {
+                "uniqueKey": "knTNroXVr",
+                "type": "Sana",
+                "amount": "keine Deckung"
+            }
+        ],
+        "coverageWysiwyg": "<ul>\n<li>TOP: Übernahme von 75% der Kosten bis max. CHF 3000.- / Jahr</li>\n<li>COMPLETA: Übernahme von 75% der Kosten bis max. CHF 4500.- / Jahr</li>\n<li>Eine ärztliche Anordnung wird vorausgesetzt</li>\n<li>Therapeutenliste Helsana: <a href=\"https://www.helsana.ch/de/private/versicherungen/zusatzversicherungen/ambulant/top/psychotherapeuten.html\" target=\"_self\">Zur Therapeutenliste der Helsana</a></li>\n</ul>\n",
+        "primaryPhoneNumber": "0844 80 81 82",
+        "requiresDoctorNote": false,
+        "specialNote": "Bedingungen auf Anfrage auf ärztliche Anordnung",
+        "urlToSupportPage": "https://www.helsana.ch/de/private/kontakt.html",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Montag bis Freitag, 8 - 18 Uhr"
+    },
+    {
+        "id": "b812d7a2-e605-5f24-b7fe-9389586f61a5",
+        "name": "EGK",
+        "coverages": [
+            {
+                "uniqueKey": "KqpakCrwb",
+                "type": "EGK SUN Basic A",
+                "amount": "80% der Therapiekosten bis CHF 1500/ Kalenderjahr, max. 2 Jahre, innerhalb 5 Jahre"
+            },
+            {
+                "uniqueKey": "MIB_s6trW",
+                "type": "EGK SUN 1",
+                "amount": "CHF 60/ Therapiesitzung bis 20 Sitzungen/ Kalenderjahr, CHF 30/ Therapiesitzung weiteres Jahr, max. 3 Jahre, innerhalb 5 Jahre"
+            },
+            {
+                "uniqueKey": "MhPMpHR08",
+                "type": "EGK SUN 2",
+                "amount": "CHF 60/ Therapiesitzung bis 20 Sitzungen/ Kalenderjahr, CHF 30/ Therapiesitzung weiteres Jahr, max. 3 Jahre, innerhalb 5 Jahre"
+            },
+            {
+                "uniqueKey": "oWwS-kSWm",
+                "type": "EGK SUN 3",
+                "amount": "CHF 60/ Therapiesitzung bis 20 Sitzungen/ Kalenderjahr, CHF 30/ Therapiesitzung weiteres Jahr, max. 3 Jahre, innerhalb 5 Jahre"
+            },
+            {
+                "uniqueKey": "ZUI4srA0Y",
+                "type": "EGK SUN Flex",
+                "amount": "CHF 60/ Therapiesitzung bis 20 Sitzungen/ Kalenderjahr, CHF 30/ Therapiesitzung weiteres Jahr, max. 3 Jahre, innerhalb 5 Jahre"
+            },
+            {
+                "uniqueKey": "4TdXosTDs",
+                "type": "EGK SUN 2020",
+                "amount": "80% der Therapiekosten, bis CHF 1080/ Kalenderjahr "
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 61 765 51 11",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.egk.ch/de/ueber-uns/kontakt",
+        "hasNoCoverageInfo": true,
+        "callServiceHours": ""
+    },
+    {
+        "id": "1d5a00d7-09ae-51b5-8cc1-fb0b82458918",
+        "name": "AXA",
+        "coverages": [
+            {
+                "uniqueKey": "RwnZgrfPO",
+                "type": "Gesundheit Actif",
+                "amount": "-"
+            },
+            {
+                "uniqueKey": "-ok9vJ_zR",
+                "type": "Gesundheit PLUS",
+                "amount": "75% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "-YkEj88xy",
+                "type": "Gesundheit COMPLET",
+                "amount": "75% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<ul>\n<li>Familienberatung, Coaching oder Paartherapien werden gemäss (AGB) nicht gedeckt</li>\n</ul>\n",
+        "primaryPhoneNumber": "+41 800 888 999",
+        "requiresDoctorNote": false,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.axa.ch/de/privatkunden/kontakt-services/kontakt/allgemeiner-kontakt.html",
+        "hasNoCoverageInfo": true,
+        "callServiceHours": "24h Kundenservice"
+    },
+    {
+        "id": "b01251e3-3564-5234-aba2-34ef936cc13a",
+        "name": "Agrisano",
+        "coverages": [
+            {
+                "uniqueKey": "lMtUR40pg",
+                "type": "AGRI-spezial",
+                "amount": "CHF 50/ Sitzung, bis 20 Sitzungen/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 56 461 71 11",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "",
+        "hasNoCoverageInfo": true,
+        "callServiceHours": ""
+    },
+    {
+        "id": "2df0fafd-765a-576e-b39b-60422f85ee68",
+        "name": "Swisscare",
+        "coverages": [
+            {
+                "uniqueKey": "-uOX24ID2",
+                "type": "Standard",
+                "amount": "keine Deckung"
+            },
+            {
+                "uniqueKey": "Ob2R8FQ48",
+                "type": "Comfort",
+                "amount": "keine Deckung"
+            },
+            {
+                "uniqueKey": "Be3d8bGuN",
+                "type": "Premium",
+                "amount": "50% der Therapiekosten, bis CHF 500/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 58 275 22 10",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://swisscare.com/de/home",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": ""
+    },
+    {
+        "id": "d2cd89dc-4b73-52f0-8593-1904624765fa",
+        "name": "Visana",
+        "coverages": [
+            {
+                "uniqueKey": "jx8BOivY7",
+                "type": "Basic",
+                "amount": "CHF 60/ Sitzung bis 20 Sitzungen, dann CHF 50/ Sitzungen für 40 weitere Sitzungen"
+            },
+            {
+                "uniqueKey": "gMUvD-5fk",
+                "type": "Ambulant II",
+                "amount": "CHF 60/ Sitzung bis 20 Sitzungen, dann CHF 50/ Sitzungen für 40 weitere Sitzungen"
+            },
+            {
+                "uniqueKey": "epogW2_8E",
+                "type": "Ambulant III",
+                "amount": "80% der Therapiekosten, bis CHF 5000/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<ul>\n<li>Therapeutenliste Visana: <a href=\"https://entry.visana.ch/b2a/apps/saa/thera/\" target=\"_self\"><ins>Zur Therapeutenliste</ins></a></li>\n</ul>\n",
+        "primaryPhoneNumber": "+41 848 848 899",
+        "requiresDoctorNote": false,
+        "specialNote": "",
+        "urlToSupportPage": "",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Do. von 8.00 Uhr bis 12.00 Uhr / 13.00 Uhr bis 17.00 Uhr und Fr. von 8.00 Uhr bis 12.00 Uhr / 13.00 bis 16.00 Uhr"
+    },
+    {
+        "id": "ceb18332-e2ff-5713-93f0-eea337a3710c",
+        "name": "Sanitas",
+        "coverages": [
+            {
+                "uniqueKey": "V4g4yDz1f",
+                "type": "Classic",
+                "amount": "80% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "1mqJSu-CH",
+                "type": "Family",
+                "amount": "80% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "z5QmsLohV",
+                "type": "Basic 2",
+                "amount": "80% der Therapiekosten, bis CHF 500/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "r1n2lkMxW",
+                "type": "Diversa",
+                "amount": "75% der Therapiekosten, bis CHF 3000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "fbXsZ-Ca6",
+                "type": "Jump",
+                "amount": "Keine Deckung"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 844 150 150",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.sanitas.com/de/privatkunden/kontakt-hilfe/kontakt/rufen-sie-uns-an.html",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 17.00 Uhr"
+    },
+    {
+        "id": "865d04cd-f80c-541c-a8d2-050a7b2d37bc",
+        "name": "Swica",
+        "coverages": [
+            {
+                "uniqueKey": "POsBUE4u-",
+                "type": "COMPLETA TOP",
+                "amount": "CHF 50/ Sitzung, bis 60 Sitzungen/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "PnnZ4s6Bq",
+                "type": "OPTIMA",
+                "amount": "CHF 25/ Sitzung, bis 60 Sitzungen/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 800 80 90 80",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.swica.ch/en/private/contact",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "24h Kundenservice"
+    },
+    {
+        "id": "d3ab84c7-97bd-5eb8-9f76-b13727864eda",
+        "name": "ÖKK",
+        "coverages": [
+            {
+                "uniqueKey": "4122UeniNx",
+                "type": "START",
+                "amount": "50% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 800 838 000",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 18.00 Uhr"
+    },
+    {
+        "id": "2c02f7ec-dd43-5091-ad1d-c93351f45930",
+        "name": "Atupri",
+        "coverages": [
+            {
+                "uniqueKey": "TW85QFJY8",
+                "type": "Diversa",
+                "amount": "50% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "J2Drzsd6-",
+                "type": "Mivita Reala",
+                "amount": "50% der Therapiekosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "Bscdv-GeK",
+                "type": "Mivita Extensa",
+                "amount": "60% der Therapiekosten, bis CHF 1500/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 800 200 888",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.atupri.ch/de/kontakt",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 17.00 Uhr"
+    },
+    {
+        "id": "3e570852-9063-5a32-adf3-0804332b90df",
+        "name": "Concordia",
+        "coverages": [
+            {
+                "uniqueKey": "ZSrlBBqeD",
+                "type": "DIVERSA",
+                "amount": "75% der Therapiekosten, bis CHF 2000 innerhalb 3 Jahre"
+            },
+            {
+                "uniqueKey": "8b14bfvT5",
+                "type": "DIVERSA care",
+                "amount": "75% der Therapiekosten, bis CHF 2000 innerhalb 3 Jahre"
+            },
+            {
+                "uniqueKey": "lzknE9T12",
+                "type": "DIVERSA plus ",
+                "amount": "75% der Therapiekosten, bis CHF 3000 innerhalb 3 Jahre"
+            },
+            {
+                "uniqueKey": "tJU5Ci5BV",
+                "type": "DIVERSA premium",
+                "amount": "75% der Therapiekosten, bis CHF 3000 innerhalb 3 Jahre"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 41 210 02 50",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.concordia.ch/de/kontakt.html",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": ""
+    },
+    {
+        "id": "625e009f-5c3b-5312-8bbf-56a32cc3916b",
+        "name": "Sympany",
+        "coverages": [
+            {
+                "uniqueKey": "xBZFmCi23",
+                "type": "Plus",
+                "amount": "50% der Therapieosten, bis CHF 1000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "-kMWfkhmg",
+                "type": "Premium",
+                "amount": "50% der Therapieosten, bis CHF 2000/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 58 262 42 22",
+        "requiresDoctorNote": false,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.sympany.ch/de/privatkunden/zusatzversicherungen.html",
+        "hasNoCoverageInfo": true,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 17.00 Uhr"
+    },
+    {
+        "id": "974875aa-03bc-52c0-b676-a353c7a38ddd",
+        "name": "Assura",
+        "coverages": [
+            {
+                "uniqueKey": "HAsbGFHey",
+                "type": "Complementa Extra",
+                "amount": "CHF 1'500/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "G8Zlvqxuv",
+                "type": "Complementa PLUS",
+                "amount": "CHF 1'500/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "MXXEclmdp",
+                "type": "Natura",
+                "amount": "keine Deckung"
+            },
+            {
+                "uniqueKey": "hTWbz2uNT",
+                "type": "Natura R3",
+                "amount": "CHF 50/ Sitzung, bis 20 Sitzungen/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "jMnqqneZP",
+                "type": "Assura Complementa Maxi",
+                "amount": "Psychotherapy, keine Deckung"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 842 277 872",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.assura.ch/de/service-support/service-und-support",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr.  von 8.30 Uhr bis 12.00 Uhr / 13.00 Uhr bis 17.00 Uhr"
+    },
+    {
+        "id": "48d9fec2-3190-509c-baf7-01d13726be6b",
+        "name": "Groupe Mutuel / Avenir",
+        "coverages": [
+            {
+                "uniqueKey": "iKEc8fiko",
+                "type": "Heilungskosten-Zusatzversicherung Stufe 1",
+                "amount": "CHF 500/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "45GjZz2o0",
+                "type": "Heilungskosten-Zusatzversicherung Stufe 2",
+                "amount": "CHF 600/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "Q95x5YW7s",
+                "type": "Heilungskosten-Zusatzversicherung Stufe 3",
+                "amount": "CHF 700/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "B6pXiiyuE",
+                "type": "Heilungskosten-Zusatzversicherung Stufe 4",
+                "amount": "CHF 800/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<ul>\n<li>Krankenkasse muss kontaktiert werden, um abzuklären, ob der/die betreffende Therapeut/in anerkannt ist</li>\n</ul>\n",
+        "primaryPhoneNumber": "+41 848 803 111",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 18.00 Uhr"
+    },
+    {
+        "id": "3d50c67c-a99e-5db7-9e04-22841559c351",
+        "name": "Vita Surselva",
+        "coverages": [
+            {
+                "uniqueKey": "I6f44iggp",
+                "type": "Allgemeiner Zusatz",
+                "amount": "CHF 60/ Sitzung, bis 25 Sitzungen/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "PMJU5r3_m",
+                "type": "Completta",
+                "amount": "CHF 60/ Sitzung, bis 25 Sitzungen/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 81 925 61 60",
+        "requiresDoctorNote": false,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.vitasurselva.ch/home/",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 8.00 Uhr bis 12.00 Uhr / 13.30 Uhr bis 17.30 Uhr"
+    },
+    {
+        "id": "7f71b2ad-cc6b-560e-a4c6-b77a7cd3726f",
+        "name": "Rhenusana",
+        "coverages": [
+            {
+                "uniqueKey": "FZKE4DGjdg",
+                "type": "rhenuPLUS Silber",
+                "amount": "75% der Therapiekosten, bis CHF 1'500/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "zrJfZiZZe",
+                "type": "rhenuPLUS Gold",
+                "amount": "75% der Therapiekosten, bis CHF 3000/ Kalenderjahr"
+            },
+            {
+                "uniqueKey": "Mvxk7zqD0",
+                "type": "rhenuPLUS Platin",
+                "amount": "75% der Therapiekosten, bis CHF 3000/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 71 727 88 00",
+        "requiresDoctorNote": false,
+        "specialNote": "",
+        "urlToSupportPage": "",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Do. von 8.00 Uhr bis 11:30 Uhr / 13.30 Uhr bis 17.00 Uhr und Fr. bis 16.00 Uhr"
+    },
+    {
+        "id": "816b526e-fd1e-5cd8-b050-b5f247bfbdeb",
+        "name": "Aquilana",
+        "coverages": [
+            {
+                "uniqueKey": "V5aTdJXDi",
+                "type": "PLUS",
+                "amount": "CHF 40/ Sitzung, bis 30 Sitzungen/ Kalenderjahr"
+            }
+        ],
+        "coverageWysiwyg": "<p></p>\n",
+        "primaryPhoneNumber": "+41 56 203 44 44",
+        "requiresDoctorNote": true,
+        "specialNote": "",
+        "urlToSupportPage": "https://www.aquilana.ch/kontakt/",
+        "hasNoCoverageInfo": false,
+        "callServiceHours": "Mo. - Fr. von 08.00 Uhr bis 12.00 Uhr / 13.30 Uhr bis 16.30 Uhr"
+    }
+]
