@@ -8,10 +8,9 @@ import interactionPlugin from '@fullcalendar/interaction'
 import deLocale from '@fullcalendar/core/locales/de'
 import frLocale from '@fullcalendar/core/locales/fr'
 import './Calendar.scss'
-import { CalendarViewType } from './CalendarToolbar'
 import Typography from 'atoms/Typography'
 import moment from 'moment'
-import { renderDateTime } from 'util/time/formatTime'
+import { renderDateTime } from 'utils/time/formatTime'
 
 const Calendar: React.FC<any> = forwardRef<any, any>((props, ref) => {
   return (
@@ -22,7 +21,6 @@ const Calendar: React.FC<any> = forwardRef<any, any>((props, ref) => {
         plugins={[dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin]}
         timeFormat='H:mm'
         rerenderDelay={10}
-        initialView={CalendarViewType.timeGridWeek}
         dayMaxEvents={2}
         eventDisplay='block'
         headerToolbar={false}
