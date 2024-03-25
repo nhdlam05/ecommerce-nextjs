@@ -1,5 +1,4 @@
 import CircularProgress from '@mui/material/CircularProgress'
-import { IoIosArrowForward } from 'react-icons/io'
 import './_Button.scss'
 
 export type ButtonTheme =
@@ -114,7 +113,7 @@ const Button: React.FC<Props> = ({
 
         {iconArrow && (
           <i className='Button--icon'>
-            <IoIosArrowForward />
+            icon arrow
           </i>
         )}
       </button>
