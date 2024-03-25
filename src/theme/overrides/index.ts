@@ -48,7 +48,7 @@ import MuiIconButton from './icon-button'
 import MuiButtonGroup from './button-group'
 import MuiAutocomplete from './autocomplete'
 import MuiToggleButton from './toggleButton'
-import { Settings } from 'src/contexts/SettingsContext'
+import { Settings } from 'contexts/SettingsContext'
 
 const Overrides = (settings: Settings) => {
   const { skin } = settings

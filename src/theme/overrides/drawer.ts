@@ -1,6 +1,6 @@
 // ** Type Imports
 import { OwnerStateThemeType } from '.'
-import { Skin } from 'src/types/layouts'
+import { Skin } from 'types/layouts'
 
 const Drawer = (skin: Skin) => {
   return {

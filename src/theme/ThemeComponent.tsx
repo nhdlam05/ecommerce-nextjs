@@ -7,14 +7,14 @@ import GlobalStyles from '@mui/material/GlobalStyles'
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles'
 
 // ** Theme Config
-import themeConfig from 'src/configs/themeConfig'
+import themeConfig from 'configs/themConfig'
 
 // ** Theme
 import themeOptions from './ThemeOptions'
 
 // ** Global Styles
 import GlobalStyling from './globalStyles'
-import { Settings } from 'src/contexts/SettingsContext'
+import { Settings } from 'contexts/SettingsContext'
 
 interface Props {
   settings: Settings

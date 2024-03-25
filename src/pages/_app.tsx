@@ -14,28 +14,29 @@ import { Provider } from 'react-redux'
 import NProgress from 'nprogress'
 
 // ** Config Imports
-import 'src/configs/i18n'
-import { defaultACLObj } from 'src/configs/acl'
-import themeConfig from 'src/configs/themeConfig'
+import 'configs/i18n'
+import { defaultACLObj } from 'configs/acl'
+import themeConfig from 'configs/themConfig'
 
 // ** Third Party Import
 import { Toaster } from 'react-hot-toast'
 
 // ** Contexts
-import { AuthProvider } from 'src/contexts/AuthContext'
+import { AuthProvider } from 'contexts/AuthContext'
 
 // ** Global css styles
-import 'src/styles/globals.scss'
+import 'styles/globals.scss'
 
-import { store } from 'src/stores'
-import GuestGuard from 'src/components/auth/GuestGuard'
-import AuthGuard from 'src/components/auth/AuthGuard'
-import FallbackSpinner from 'src/components/fall-back'
-import { SettingsConsumer, SettingsProvider } from 'src/contexts/SettingsContext'
-import AclGuard from 'src/components/auth/AclGuard'
-import ReactHotToast from 'src/components/react-hot-toast'
-import { useSettings } from 'src/hooks/useSettings'
-import ThemeComponent from 'src/theme/ThemeComponent'
+import { store } from 'stores'
+
+import FallbackSpinner from 'components/fall-back'
+import { SettingsConsumer, SettingsProvider } from 'contexts/SettingsContext'
+import ReactHotToast from 'components/react-hot-toast'
+import { useSettings } from 'hooks/useSettings'
+import ThemeComponent from 'theme/ThemeComponent'
+import GuestGuard from "../components/auth/GuestGuard";
+import AuthGuard from "../components/auth/AuthGuard";
+import AclGuard from "../components/auth/AclGuard";
 
 type ExtendedAppProps = AppProps & {
   Component: NextPage

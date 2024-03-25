@@ -54,7 +54,7 @@
   },
   "overrides": [
     {
-      "files": ["src/iconify-bundle/*"],
+      "files": ["iconify-bundle/*"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/no-unused-vars": "off"
