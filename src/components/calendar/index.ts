@@ -1,1 +1,1 @@
-export { default as CalendarProvider } from './CalendarProvider';
+export { default as CalendarProvider } from './CalendarProvider'

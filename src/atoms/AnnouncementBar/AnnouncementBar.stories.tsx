@@ -1,17 +1,15 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import AnnouncementBar from './AnnouncementBar';
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import AnnouncementBar from './AnnouncementBar'
 
 export default {
-    title: 'Aepsy/AnnouncementBar',
-    component: AnnouncementBar,
-} as ComponentMeta<typeof AnnouncementBar>;
+  title: 'Aepsy/AnnouncementBar',
+  component: AnnouncementBar
+} as ComponentMeta<typeof AnnouncementBar>
 
-const Template: ComponentStory<typeof AnnouncementBar> = (args) => (
-    <AnnouncementBar {...args} />
-);
+const Template: ComponentStory<typeof AnnouncementBar> = args => <AnnouncementBar {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
-    text: 'Attention!!',
-    onClose: () => {},
-};
+  text: 'Attention!!',
+  onClose: () => {}
+}

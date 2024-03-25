@@ -1,197 +1,127 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .Section {
-    // Spacings
-    @mixin spacing($size, $space, $spaceMobile) {
-        &.spacing-#{$size} {
-            padding-top: $space;
-            padding-bottom: $space;
+  // Spacings
+  @mixin spacing($size, $space, $spaceMobile) {
+    &.spacing-#{$size} {
+      padding-top: $space;
+      padding-bottom: $space;
 
-            @include tablet-portrait {
-                padding-top: $spaceMobile;
-                padding-bottom: $spaceMobile;
-            }
-        }
+      @include tablet-portrait {
+        padding-top: $spaceMobile;
+        padding-bottom: $spaceMobile;
+      }
     }
+  }
 
-    @include spacing('xxl', $section_spacing-xxl, $section_spacing-xxl-mobile);
-    @include spacing('xl', $section_spacing-xl, $section_spacing-xl-mobile);
-    @include spacing('l', $section_spacing-l, $section_spacing-l-mobile);
-    @include spacing('m', $section_spacing-m, $section_spacing-m-mobile);
-    @include spacing('s', $section_spacing-s, $section_spacing-s-mobile);
-    @include spacing('xs', $section_spacing-xs, $section_spacing-xs-mobile);
-    @include spacing('xxs', $section_spacing-xxs, $section_spacing-xxs-mobile);
+  @include spacing('xxl', $section_spacing-xxl, $section_spacing-xxl-mobile);
+  @include spacing('xl', $section_spacing-xl, $section_spacing-xl-mobile);
+  @include spacing('l', $section_spacing-l, $section_spacing-l-mobile);
+  @include spacing('m', $section_spacing-m, $section_spacing-m-mobile);
+  @include spacing('s', $section_spacing-s, $section_spacing-s-mobile);
+  @include spacing('xs', $section_spacing-xs, $section_spacing-xs-mobile);
+  @include spacing('xxs', $section_spacing-xxs, $section_spacing-xxs-mobile);
 
-    // Spacing Top & Bottom
-    @mixin spacingTB($position, $size, $space, $spaceMobile) {
-        &.spacing-#{$position}-#{$size} {
-            padding-#{$position}: $space;
+  // Spacing Top & Bottom
+  @mixin spacingTB($position, $size, $space, $spaceMobile) {
+    &.spacing-#{$position}-#{$size} {
+      padding-#{$position}: $space;
 
-            @include tablet-portrait {
-                padding-#{$position}: $spaceMobile;
-            }
-        }
+      @include tablet-portrait {
+        padding-#{$position}: $spaceMobile;
+      }
     }
+  }
 
-    @include spacingTB(
-        'top',
-        'xxl',
-        $section_spacing-xxl,
-        $section_spacing-xxl-mobile
-    );
-    @include spacingTB(
-        'top',
-        'xl',
-        $section_spacing-xl,
-        $section_spacing-xl-mobile
-    );
-    @include spacingTB(
-        'top',
-        'l',
-        $section_spacing-l,
-        $section_spacing-l-mobile
-    );
-    @include spacingTB(
-        'top',
-        'm',
-        $section_spacing-m,
-        $section_spacing-m-mobile
-    );
-    @include spacingTB(
-        'top',
-        's',
-        $section_spacing-s,
-        $section_spacing-s-mobile
-    );
-    @include spacingTB(
-        'top',
-        'xs',
-        $section_spacing-xs,
-        $section_spacing-xs-mobile
-    );
-    @include spacingTB(
-        'top',
-        'xxs',
-        $section_spacing-xxs,
-        $section_spacing-xxs-mobile
-    );
+  @include spacingTB('top', 'xxl', $section_spacing-xxl, $section_spacing-xxl-mobile);
+  @include spacingTB('top', 'xl', $section_spacing-xl, $section_spacing-xl-mobile);
+  @include spacingTB('top', 'l', $section_spacing-l, $section_spacing-l-mobile);
+  @include spacingTB('top', 'm', $section_spacing-m, $section_spacing-m-mobile);
+  @include spacingTB('top', 's', $section_spacing-s, $section_spacing-s-mobile);
+  @include spacingTB('top', 'xs', $section_spacing-xs, $section_spacing-xs-mobile);
+  @include spacingTB('top', 'xxs', $section_spacing-xxs, $section_spacing-xxs-mobile);
 
-    @include spacingTB(
-        'bottom',
-        'xxl',
-        $section_spacing-xxl,
-        $section_spacing-xxl-mobile
-    );
-    @include spacingTB(
-        'bottom',
-        'xl',
-        $section_spacing-xl,
-        $section_spacing-xl-mobile
-    );
-    @include spacingTB(
-        'bottom',
-        'l',
-        $section_spacing-l,
-        $section_spacing-l-mobile
-    );
-    @include spacingTB(
-        'bottom',
-        'm',
-        $section_spacing-m,
-        $section_spacing-m-mobile
-    );
-    @include spacingTB(
-        'bottom',
-        's',
-        $section_spacing-s,
-        $section_spacing-s-mobile
-    );
-    @include spacingTB(
-        'bottom',
-        'xs',
-        $section_spacing-xs,
-        $section_spacing-xs-mobile
-    );
-    @include spacingTB(
-        'bottom',
-        'xxs',
-        $section_spacing-xxs,
-        $section_spacing-xxs-mobile
-    );
+  @include spacingTB('bottom', 'xxl', $section_spacing-xxl, $section_spacing-xxl-mobile);
+  @include spacingTB('bottom', 'xl', $section_spacing-xl, $section_spacing-xl-mobile);
+  @include spacingTB('bottom', 'l', $section_spacing-l, $section_spacing-l-mobile);
+  @include spacingTB('bottom', 'm', $section_spacing-m, $section_spacing-m-mobile);
+  @include spacingTB('bottom', 's', $section_spacing-s, $section_spacing-s-mobile);
+  @include spacingTB('bottom', 'xs', $section_spacing-xs, $section_spacing-xs-mobile);
+  @include spacingTB('bottom', 'xxs', $section_spacing-xxs, $section_spacing-xxs-mobile);
 
-    // Shared themes
-    &.theme-white {
-        background-color: $c-white;
-    }
+  // Shared themes
+  &.theme-white {
+    background-color: $c-white;
+  }
+  &.theme-light {
+    background-color: $c-beige-1;
+  }
+  &.theme-highlighted {
+    background-color: $c-rose-4;
+  }
+  &.theme-dark {
+    background-color: $c-green-4;
+  }
+  &.theme-soft {
+    background-color: $c-green-2;
+  }
+
+  // Theme Default
+  .global_theme-default & {
     &.theme-light {
-        background-color: $c-beige-1;
+      background-color: $c-beige-1;
     }
     &.theme-highlighted {
-        background-color: $c-rose-4;
+      background-color: $c-rose-2;
+
+      .Text:not(.theme-white) {
+        color: rgba($c-primary, 0.8);
+      }
     }
     &.theme-dark {
-        background-color: $c-green-4;
+      background-color: $c-rose-4;
+    }
+  }
+
+  // Theme Green
+  .global_theme-green & {
+    &.theme-light {
+      background-color: $c-beige-1;
+    }
+    &.theme-highlighted {
+      background-color: $c-rose-4;
+    }
+    &.theme-dark {
+      background-color: $c-green-4;
     }
     &.theme-soft {
-        background-color: $c-green-2;
+      background-color: $c-green-2;
     }
+  }
 
-    // Theme Default
-    .global_theme-default & {
-        &.theme-light {
-            background-color: $c-beige-1;
-        }
-        &.theme-highlighted {
-            background-color: $c-rose-2;
-
-            .Text:not(.theme-white) {
-                color: rgba($c-primary, 0.8);
-            }
-        }
-        &.theme-dark {
-            background-color: $c-rose-4;
-        }
+  // Theme Blue
+  .global_theme-blue & {
+    &.theme-light {
+      background-color: $c-blue-1;
     }
-
-    // Theme Green
-    .global_theme-green & {
-        &.theme-light {
-            background-color: $c-beige-1;
-        }
-        &.theme-highlighted {
-            background-color: $c-rose-4;
-        }
-        &.theme-dark {
-            background-color: $c-green-4;
-        }
-        &.theme-soft {
-            background-color: $c-green-2;
-        }
+    &.theme-highlighted {
+      background-color: $c-blue-3;
     }
-
-    // Theme Blue
-    .global_theme-blue & {
-        &.theme-light {
-            background-color: $c-blue-1;
-        }
-        &.theme-highlighted {
-            background-color: $c-blue-3;
-        }
-        &.theme-dark {
-            background-color: $c-blue-4;
-        }
+    &.theme-dark {
+      background-color: $c-blue-4;
     }
+  }
 
-    // Theme Purple
-    .global_theme-purple & {
-        &.theme-light {
-            background-color: $c-purple-1;
-        }
-        &.theme-highlighted {
-            background-color: $c-purple-2;
-        }
-        &.theme-dark {
-            background-color: $c-purple-4;
-        }
+  // Theme Purple
+  .global_theme-purple & {
+    &.theme-light {
+      background-color: $c-purple-1;
     }
+    &.theme-highlighted {
+      background-color: $c-purple-2;
+    }
+    &.theme-dark {
+      background-color: $c-purple-4;
+    }
+  }
 }

@@ -4,9 +4,9 @@
 }
 
 .CalendarProviderOverrides--header {
-    padding: $itemPadding;
+  padding: $itemPadding;
 
-    @include mobile {
-        padding: $itemPaddingMobile;
-    }
+  @include mobile {
+    padding: $itemPaddingMobile;
+  }
 }

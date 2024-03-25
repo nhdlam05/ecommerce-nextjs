@@ -1,3 +1,3 @@
-import StatusBlock from './StatusBlock';
+import StatusBlock from './StatusBlock'
 
-export default StatusBlock;
+export default StatusBlock

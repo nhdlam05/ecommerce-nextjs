@@ -1,36 +1,27 @@
-import Icon, { IconExpand } from 'atoms/Icon';
-import Module from 'atoms/Module/Module';
-import './ExpandedCard.scss';
+import Icon, { IconExpand } from 'atoms/Icon'
+import Module from 'atoms/Module/Module'
+import './ExpandedCard.scss'
 
 interface Props {
-    padding?: 's' | 'm';
-    radius?: 'l' | 'xl';
-    iconSize?: 'xxs' | 'xs';
-    children: React.ReactNode;
-    onClick?: VoidFunction;
+  padding?: 's' | 'm'
+  radius?: 'l' | 'xl'
+  iconSize?: 'xxs' | 'xs'
+  children: React.ReactNode
+  onClick?: VoidFunction
 }
 
-const ExpandedCard: React.FC<Props> = ({
-    children,
-    iconSize = 'xxs',
-    onClick,
-    ...others
-}) => {
-    return (
-        <div className="ExpandedCard" onClick={onClick}>
-            <Module {...others}>
-                <div className="ExpandedCard--icon">
-                    <Icon
-                        icon={<IconExpand />}
-                        theme="highlighted"
-                        size={iconSize}
-                    />
-                </div>
-
-                {children}
-            </Module>
+const ExpandedCard: React.FC<Props> = ({ children, iconSize = 'xxs', onClick, ...others }) => {
+  return (
+    <div className='ExpandedCard' onClick={onClick}>
+      <Module {...others}>
+        <div className='ExpandedCard--icon'>
+          <Icon icon={<IconExpand />} theme='highlighted' size={iconSize} />
         </div>
-    );
-};
 
-export default ExpandedCard;
+        {children}
+      </Module>
+    </div>
+  )
+}
+
+export default ExpandedCard

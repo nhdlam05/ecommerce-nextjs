@@ -1,141 +1,141 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .Calendar {
-    height: 90vh;
+  height: 90vh;
 
-    .fc-col-header-cell-cushion,
-    .fc-daygrid-day-number,
-    .fc-daygrid-event,
-    .fc-list-day-text,
-    .fc-list-day-side-text,
-    .fc-popover-title {
-        color: $c-primary;
-    }
+  .fc-col-header-cell-cushion,
+  .fc-daygrid-day-number,
+  .fc-daygrid-event,
+  .fc-list-day-text,
+  .fc-list-day-side-text,
+  .fc-popover-title {
+    color: $c-primary;
+  }
 
-    // .fc-daygrid-day.fc-day-today,
-    // .fc-daygrid-day-bg,
-    // .fc-today-bg-color {
-    //     background-color: $c-blue-1;
-    // }
+  // .fc-daygrid-day.fc-day-today,
+  // .fc-daygrid-day-bg,
+  // .fc-today-bg-color {
+  //     background-color: $c-blue-1;
+  // }
 
-    .fc-popover {
-        box-shadow: $bs-strong;
-        border-radius: $brad-l;
-
-        .fc-daygrid-event {
-            margin-bottom: 8px;
-        }
-    }
+  .fc-popover {
+    box-shadow: $bs-strong;
+    border-radius: $brad-l;
 
     .fc-daygrid-event {
-        .fc-event-main-frame {
-            display: flex;
-            flex-direction: column;
-        }
+      margin-bottom: 8px;
     }
+  }
 
-    .fc-theme-standard td,
-    .fc-theme-standard th {
-        border: unset;
+  .fc-daygrid-event {
+    .fc-event-main-frame {
+      display: flex;
+      flex-direction: column;
     }
+  }
 
-    .fc .fc-timegrid-slot {
-        border-bottom: 1px solid rgba($c-green-4, 0.2);
-    }
+  .fc-theme-standard td,
+  .fc-theme-standard th {
+    border: unset;
+  }
 
-    .fc-theme-standard .fc-scrollgrid {
-        border: none;
-    }
+  .fc .fc-timegrid-slot {
+    border-bottom: 1px solid rgba($c-green-4, 0.2);
+  }
 
-    .fc .fc-timegrid-slot {
-        height: 3em;
-    }
+  .fc-theme-standard .fc-scrollgrid {
+    border: none;
+  }
 
-    .Calendaer--nowIndicator {
-        height: 1px;
-        border: 1px solid $c-rose-4;
-    }
+  .fc .fc-timegrid-slot {
+    height: 3em;
+  }
 
-    .fc .fc-timegrid-now-indicator-line {
-        border-color: $c-rose-4;
-        border-width: 1px;
-        &::before {
-            content: '•';
-            color: $c-rose-4;
-            top: -28px;
-            position: absolute;
-            left: -5px;
-            font-size: 2rem;
-        }
-    }
+  .Calendaer--nowIndicator {
+    height: 1px;
+    border: 1px solid $c-rose-4;
+  }
 
-    .fc-timegrid-now-indicator-arrow {
-        display: none;
+  .fc .fc-timegrid-now-indicator-line {
+    border-color: $c-rose-4;
+    border-width: 1px;
+    &::before {
+      content: '•';
+      color: $c-rose-4;
+      top: -28px;
+      position: absolute;
+      left: -5px;
+      font-size: 2rem;
     }
+  }
 
-    .fc .fc-timegrid-col.fc-day-today {
-        background-color: $c-rose-1;
-    }
+  .fc-timegrid-now-indicator-arrow {
+    display: none;
+  }
 
-    .Calendar--eventTitle {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        max-width: 80%;
-    }
+  .fc .fc-timegrid-col.fc-day-today {
+    background-color: $c-rose-1;
+  }
 
-    .Calendar--eventIcon {
-        position: absolute;
-        bottom: 2px;
-        right: 2px;
-    }
+  .Calendar--eventTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 80%;
+  }
 
-    .fc-timegrid-event.is-pass-event {
-        opacity: 0.4;
-    }
-    .Calendar--addCTA {
-        position: absolute;
-        top: -15px;
-        right: -4px;
-    }
+  .Calendar--eventIcon {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+  }
 
-    .fc-timeGridDay-view {
-        .fc-col-header-cell {
-            display: none;
-        }
-    }
-    .fc .fc-timegrid-slot-label {
-        vertical-align: top;
-        border-bottom: none;
-    }
+  .fc-timegrid-event.is-pass-event {
+    opacity: 0.4;
+  }
+  .Calendar--addCTA {
+    position: absolute;
+    top: -15px;
+    right: -4px;
+  }
 
-    .fc .fc-timegrid-slot-label-cushion {
-        position: absolute;
-        left: 0px;
-        top: -13px;
+  .fc-timeGridDay-view {
+    .fc-col-header-cell {
+      display: none;
     }
+  }
+  .fc .fc-timegrid-slot-label {
+    vertical-align: top;
+    border-bottom: none;
+  }
 
-    .fc-direction-ltr .fc-timegrid-slot-label-frame {
-        position: relative;
-    }
+  .fc .fc-timegrid-slot-label-cushion {
+    position: absolute;
+    left: 0px;
+    top: -13px;
+  }
 
-    .fc .fc-scrollgrid-section table {
-        margin-top: 10px;
-    }
+  .fc-direction-ltr .fc-timegrid-slot-label-frame {
+    position: relative;
+  }
 
-    .fc-timegrid-event.event-clickable {
-        cursor: pointer;
-    }
+  .fc .fc-scrollgrid-section table {
+    margin-top: 10px;
+  }
 
-    .fc-timegrid-event-harness > .fc-timegrid-event {
-        top: -10px;
-        bottom: 10px;
-        min-height: 25px;
-        border: none;
-    }
-    .fc-timegrid-event .fc-event-main {
-        padding: 1px 5px 0;
-        overflow: hidden;
-        position: unset;
-    }
+  .fc-timegrid-event.event-clickable {
+    cursor: pointer;
+  }
+
+  .fc-timegrid-event-harness > .fc-timegrid-event {
+    top: -10px;
+    bottom: 10px;
+    min-height: 25px;
+    border: none;
+  }
+  .fc-timegrid-event .fc-event-main {
+    padding: 1px 5px 0;
+    overflow: hidden;
+    position: unset;
+  }
 }

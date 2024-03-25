@@ -1,8 +1,8 @@
-import { StrikethroughStyled } from './styles';
-import { Props } from './Typography';
+import { StrikethroughStyled } from './styles'
+import { Props } from './Typography'
 
-const Strikethrough: React.FC<Props> = (props) => {
-    return <StrikethroughStyled {...props} />;
-};
+const Strikethrough: React.FC<Props> = props => {
+  return <StrikethroughStyled {...props} />
+}
 
-export default Strikethrough;
+export default Strikethrough

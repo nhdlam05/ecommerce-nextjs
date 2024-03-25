@@ -1,51 +1,51 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 @mixin CalendarWrapperModule() {
-    background-color: $c-white;
-    border-radius: $brad-m;
-    padding: 15px;
+  background-color: $c-white;
+  border-radius: $brad-m;
+  padding: 15px;
 }
 
 .CalendarProvider {
-    @include above-mobile {
-        @include CalendarWrapperModule();
+  @include above-mobile {
+    @include CalendarWrapperModule();
 
-        .CalendarNextAvailability {
-            margin-left: 24px;
-            margin-right: 24px;
-            margin-top: 24px;
-            margin-bottom: 0;
-        }
-    }
     .CalendarNextAvailability {
-        margin-bottom: 24px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-top: 24px;
+      margin-bottom: 0;
     }
+  }
+  .CalendarNextAvailability {
+    margin-bottom: 24px;
+  }
 }
 
 .CalendarProvider--content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    @include mobile {
-        display: block;
-    }
+  @include mobile {
+    display: block;
+  }
 }
 .CalendarProvider--content--body {
-    flex: 1.2;
+  flex: 1.2;
 
-    @include mobile {
-        @include CalendarWrapperModule();
-        margin-bottom: 20px;
-    }
+  @include mobile {
+    @include CalendarWrapperModule();
+    margin-bottom: 20px;
+  }
 }
 .CalendarProvider--content--aside {
-    flex: 0.8;
-    border-left: $bor-default-light;
+  flex: 0.8;
+  border-left: $bor-default-light;
 
-    @include mobile {
-        border-left: none;
-        // border-top: $bor-default-light;
-        @include CalendarWrapperModule();
-        margin-bottom: 20px;
-    }
+  @include mobile {
+    border-left: none;
+    // border-top: $bor-default-light;
+    @include CalendarWrapperModule();
+    margin-bottom: 20px;
+  }
 }

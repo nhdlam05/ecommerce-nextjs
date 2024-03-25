@@ -1,4 +1,4 @@
-import RangeSlider, { RangeSliderLabelDisplayType } from './RangeSlider';
+import RangeSlider, { RangeSliderLabelDisplayType } from './RangeSlider'
 
-export type { RangeSliderLabelDisplayType };
-export default RangeSlider;
+export type { RangeSliderLabelDisplayType }
+export default RangeSlider

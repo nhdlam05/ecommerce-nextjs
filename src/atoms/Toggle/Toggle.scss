@@ -8,107 +8,107 @@ $border: 2px;
 $speed: 280ms;
 
 .Toggle {
-    display: flex;
-    padding: 0;
+  display: flex;
+  padding: 0;
 
-    label {
-        width: $width;
-        height: $height;
-        background: $c-white;
-        display: inline-block;
-        border-radius: $width;
-        position: relative;
-        cursor: pointer;
-        z-index: 3;
-        border: $border solid rgba($c-green-4, 0.15);
+  label {
+    width: $width;
+    height: $height;
+    background: $c-white;
+    display: inline-block;
+    border-radius: $width;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    border: $border solid rgba($c-green-4, 0.15);
 
-        @include above-mobile {
-            &:hover {
-                opacity: 0.9;
-            }
-        }
-
-        .Toggle--custom {
-            position: absolute;
-            width: $height - ($padding * 2) - ($border * 2);
-            height: $height - ($padding * 2) - ($border * 2);
-            top: 4px;
-            left: 4px;
-            border-radius: $height;
-            background: $c-rose-3;
-            transition: all $speed $elastic;
-            transform: translate3d(0, 0, 0);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            em {
-                height: 16px;
-                width: 16px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin-top: -8px;
-                margin-left: -8px;
-                transform: translate3d(0, 0, 0) rotate(-135deg);
-                transition: all $speed $elastic;
-
-                &::after {
-                    height: 100%;
-                    width: 2px;
-                    background: $c-white;
-                    content: '';
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -1px;
-                    top: 0;
-                }
-
-                &::before {
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background: $c-white;
-                    top: 50%;
-                    margin-top: -1px;
-                    content: '';
-                    position: absolute;
-                    transform: translate3d(0, 0, 0);
-                    transition: all $speed $elastic;
-                }
-            }
-        }
+    @include above-mobile {
+      &:hover {
+        opacity: 0.9;
+      }
     }
 
-    input {
+    .Toggle--custom {
+      position: absolute;
+      width: $height - ($padding * 2) - ($border * 2);
+      height: $height - ($padding * 2) - ($border * 2);
+      top: 4px;
+      left: 4px;
+      border-radius: $height;
+      background: $c-rose-3;
+      transition: all $speed $elastic;
+      transform: translate3d(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      em {
+        height: 16px;
+        width: 16px;
         position: absolute;
-        left: -9999px;
+        top: 50%;
+        left: 50%;
+        margin-top: -8px;
+        margin-left: -8px;
+        transform: translate3d(0, 0, 0) rotate(-135deg);
+        transition: all $speed $elastic;
 
-        &:checked + .Toggle--custom {
-            background: $c-green-flashy;
-            left: calc(100% - #{$height - $padding - $border});
-
-            em {
-                transform: translate3d(0, 0, 0) rotate(45deg);
-                margin-left: -6px;
-                &::before {
-                    left: 0;
-                    width: 50%;
-                    height: 2px;
-                    background: $c-white;
-                    top: 100%;
-                    margin-top: -2px;
-                    content: '';
-                    position: absolute;
-                }
-            }
+        &::after {
+          height: 100%;
+          width: 2px;
+          background: $c-white;
+          content: '';
+          position: absolute;
+          left: 50%;
+          margin-left: -1px;
+          top: 0;
         }
-    }
 
-    &.disabled {
-        opacity: 0.65;
-        label {
-            cursor: default;
+        &::before {
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: $c-white;
+          top: 50%;
+          margin-top: -1px;
+          content: '';
+          position: absolute;
+          transform: translate3d(0, 0, 0);
+          transition: all $speed $elastic;
         }
+      }
     }
+  }
+
+  input {
+    position: absolute;
+    left: -9999px;
+
+    &:checked + .Toggle--custom {
+      background: $c-green-flashy;
+      left: calc(100% - #{$height - $padding - $border});
+
+      em {
+        transform: translate3d(0, 0, 0) rotate(45deg);
+        margin-left: -6px;
+        &::before {
+          left: 0;
+          width: 50%;
+          height: 2px;
+          background: $c-white;
+          top: 100%;
+          margin-top: -2px;
+          content: '';
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: 0.65;
+    label {
+      cursor: default;
+    }
+  }
 }

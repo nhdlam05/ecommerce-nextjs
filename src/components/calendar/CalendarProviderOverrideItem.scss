@@ -1,35 +1,35 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .CalendarProviderOverrideItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-    border-top: $bor-default-light;
+  border-top: $bor-default-light;
 
-    .Button {
-        width: auto;
-    }
+  .Button {
+    width: auto;
+  }
 
-    &:hover,
-    &:active {
-        background-color: rgba($c-green-1, 0.4);
-    }
+  &:hover,
+  &:active {
+    background-color: rgba($c-green-1, 0.4);
+  }
 }
 
 .CalendarProviderOverrideItem--dates {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    cursor: pointer;
-    padding: $itemPadding;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: $itemPadding;
 
-    @include mobile {
-        padding: $itemPaddingMobile;
-    }
+  @include mobile {
+    padding: $itemPaddingMobile;
+  }
 
-    > div {
-        flex: 1;
-    }
+  > div {
+    flex: 1;
+  }
 }

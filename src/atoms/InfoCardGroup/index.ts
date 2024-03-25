@@ -1,3 +1,3 @@
-import InfoCardGroup from './InfoCardGroup';
+import InfoCardGroup from './InfoCardGroup'
 
-export default InfoCardGroup;
+export default InfoCardGroup

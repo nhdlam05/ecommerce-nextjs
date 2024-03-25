@@ -1,169 +1,169 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .Item {
-    background-color: $c-white;
-    padding: 16px 20px;
+  background-color: $c-white;
+  padding: 16px 20px;
 
-    flex-direction: column;
+  flex-direction: column;
+  display: flex;
+
+  width: 100%;
+  transition: all 125ms ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  .Item--inter {
     display: flex;
-
+    align-items: center;
     width: 100%;
-    transition: all 125ms ease-in-out;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
 
-    .Item--inter {
-        display: flex;
-        align-items: center;
-        width: 100%;
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.is-active {
+    background-color: $c-green-4;
+    border-bottom: 1px solid $c-green-4;
+    .Title,
+    .Text,
+    a {
+      color: $c-white;
+    }
+    .Divider {
+      background-color: $c-white;
     }
 
-    &:last-child {
-        border-bottom: none;
+    &:hover {
+      .Title,
+      .Text {
+        color: $c-green-4;
+      }
+      a {
+        color: $c-rose-4;
+      }
     }
+  }
 
-    &.is-active {
-        background-color: $c-green-4;
-        border-bottom: 1px solid $c-green-4;
-        .Title,
-        .Text,
-        a {
-            color: $c-white;
-        }
-        .Divider {
-            background-color: $c-white;
-        }
+  &.is-disabled {
+    opacity: 0.6;
+    cursor: default;
 
-        &:hover {
-            .Title,
-            .Text {
-                color: $c-green-4;
-            }
-            a {
-                color: $c-rose-4;
-            }
-        }
+    .Item--slot-start {
+      opacity: 0.4;
     }
+  }
 
-    &.is-disabled {
-        opacity: 0.6;
-        cursor: default;
+  svg {
+    display: block;
+    font-size: 1.2rem;
+    color: $c-green-4;
+  }
 
-        .Item--slot-start {
-            opacity: 0.4;
-        }
+  // Variants
+  &.variant-reverse {
+    .Item--content {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &.variant-danger {
+    color: $c-red !important;
+
+    .Title,
+    .Text {
+      color: $c-red !important;
     }
 
     svg {
-        display: block;
-        font-size: 1.2rem;
-        color: $c-green-4;
+      color: $c-red !important;
     }
+  }
 
-    // Variants
-    &.variant-reverse {
-        .Item--content {
-            flex-direction: column-reverse;
-        }
-    }
+  &.variant-outline {
+    background: transparent;
+  }
 
-    &.variant-danger {
-        color: $c-red !important;
+  &.theme-warning {
+    color: $c-dark-yellow !important;
+    border: 1px solid $c-dark-yellow;
+    border-radius: $brad-l;
+  }
 
-        .Title,
-        .Text {
-            color: $c-red !important;
-        }
+  &.theme-success {
+    color: $c-green-flashy !important;
+    border: 1px solid $c-green-flashy;
+    border-radius: $brad-l;
+  }
 
-        svg {
-            color: $c-red !important;
-        }
-    }
+  &.theme-danger {
+    color: $c-red !important;
+    border: 1px solid $c-red;
+    border-radius: $brad-l;
+  }
 
-    &.variant-outline {
-        background: transparent;
-    }
-
-    &.theme-warning {
-        color: $c-dark-yellow !important;
-        border: 1px solid $c-dark-yellow;
-        border-radius: $brad-l;
-    }
-
-    &.theme-success {
-        color: $c-green-flashy !important;
-        border: 1px solid $c-green-flashy;
-        border-radius: $brad-l;
-    }
-
-    &.theme-danger {
-        color: $c-red !important;
-        border: 1px solid $c-red;
-        border-radius: $brad-l;
-    }
-
-    &.theme-purple {
-        color: $c-purple-4 !important;
-        border: 1px solid $c-purple-4;
-        border-radius: $brad-l;
-    }
+  &.theme-purple {
+    color: $c-purple-4 !important;
+    border: 1px solid $c-purple-4;
+    border-radius: $brad-l;
+  }
 }
 .clickable.Item,
 button.Item,
 a.Item {
-    &:hover,
-    &:active {
-        background-color: $c-green-1;
+  &:hover,
+  &:active {
+    background-color: $c-green-1;
+  }
+
+  &:active {
+    text-indent: 5px;
+  }
+
+  @include mobile-device {
+    &:hover {
+      background-color: $c-white;
     }
 
     &:active {
-        text-indent: 5px;
+      background-color: $c-green-1;
     }
-
-    @include mobile-device {
-        &:hover {
-            background-color: $c-white;
-        }
-
-        &:active {
-            background-color: $c-green-1;
-        }
-    }
+  }
 }
 
 .Item--slot {
-    display: flex;
+  display: flex;
 }
 
 .Item--slot-start {
-    margin-right: 10px;
+  margin-right: 10px;
 
-    @include above-mobile {
-        margin-right: 15px;
-    }
+  @include above-mobile {
+    margin-right: 15px;
+  }
 }
 
 .Item--content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .Item--arrowIcon,
 .Item--exitIcon {
-    opacity: 0.5;
-    svg {
-        font-size: 1.4rem;
-    }
+  opacity: 0.5;
+  svg {
+    font-size: 1.4rem;
+  }
 }
 
 .Item--arrowIcon {
-    svg {
-        font-size: 1.4rem;
-    }
+  svg {
+    font-size: 1.4rem;
+  }
 }
 
 .Item--exitIcon {
-    svg {
-        font-size: 1rem;
-    }
+  svg {
+    font-size: 1rem;
+  }
 }

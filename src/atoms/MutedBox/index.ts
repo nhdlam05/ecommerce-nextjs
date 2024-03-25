@@ -1,3 +1,3 @@
-import MutedBox from './MutedBox';
+import MutedBox from './MutedBox'
 
-export default MutedBox;
+export default MutedBox

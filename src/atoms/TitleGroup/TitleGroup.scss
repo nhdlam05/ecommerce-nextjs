@@ -1,13 +1,13 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .TitleGroup {
-    &.align-desktopCenter {
-        @include above-mobile {
-            display: flex;
-            justify-content: center;
-            > * {
-                text-align: center !important;
-            }
-        }
+  &.align-desktopCenter {
+    @include above-mobile {
+      display: flex;
+      justify-content: center;
+      > * {
+        text-align: center !important;
+      }
     }
+  }
 }

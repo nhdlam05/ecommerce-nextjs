@@ -1,18 +1,18 @@
-import './ColoredBullet.scss';
+import './ColoredBullet.scss'
 
-export type ColoredBulletTheme = 'success' | 'warning' | 'danger' | 'purple';
+export type ColoredBulletTheme = 'success' | 'warning' | 'danger' | 'purple'
 
 interface Props {
-    theme: ColoredBulletTheme;
+  theme: ColoredBulletTheme
 }
 
 const ColoredBullet: React.FC<Props> = ({ theme }) => {
-    return (
-        <div className={`ColoredBullet theme-${theme}`}>
-            <span className="ColoredBullet--firstCircle"></span>
-            <span className="ColoredBullet--secondCircle"></span>
-        </div>
-    );
-};
+  return (
+    <div className={`ColoredBullet theme-${theme}`}>
+      <span className='ColoredBullet--firstCircle'></span>
+      <span className='ColoredBullet--secondCircle'></span>
+    </div>
+  )
+}
 
-export default ColoredBullet;
+export default ColoredBullet

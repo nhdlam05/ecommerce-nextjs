@@ -1,97 +1,97 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .Divider {
-    display: block;
-    background-color: $bor-default;
-    width: 100%;
-    height: 1px;
+  display: block;
+  background-color: $bor-default;
+  width: 100%;
+  height: 1px;
 
-    &.is-invisible {
-        background-color: transparent;
+  &.is-invisible {
+    background-color: transparent;
+  }
+
+  // .theme-dark & {
+  // 	background-color: $bor-light;
+  // 	&.is-invisible {
+  // 		background-color: transparent;
+  // 	}
+  // }
+
+  &.theme-white {
+    background-color: $c-white-light;
+  }
+
+  &.spacing-xl {
+    $s: 45px;
+    margin-top: $s;
+    margin-bottom: $s;
+
+    @include mobile {
+      $s: 30px;
+      margin-top: $s;
+      margin-bottom: $s;
     }
+  }
+  &.spacing-l {
+    $s: 30px;
+    margin-top: $s;
+    margin-bottom: $s;
 
-    // .theme-dark & {
-    // 	background-color: $bor-light;
-    // 	&.is-invisible {
-    // 		background-color: transparent;
-    // 	}
-    // }
-
-    &.theme-white {
-        background-color: $c-white-light;
+    @include mobile {
+      $s: 20px;
+      margin-top: $s;
+      margin-bottom: $s;
     }
+  }
+  &.spacing-m {
+    $s: 25px;
+    margin-top: $s;
+    margin-bottom: $s;
 
-    &.spacing-xl {
-        $s: 45px;
-        margin-top: $s;
-        margin-bottom: $s;
-
-        @include mobile {
-            $s: 30px;
-            margin-top: $s;
-            margin-bottom: $s;
-        }
+    @include mobile {
+      $s: 15px;
+      margin-top: $s;
+      margin-bottom: $s;
     }
-    &.spacing-l {
-        $s: 30px;
-        margin-top: $s;
-        margin-bottom: $s;
+  }
+  &.spacing-s {
+    $s: 20px;
+    margin-top: $s;
+    margin-bottom: $s;
+  }
+  &.spacing-xs {
+    $s: 15px;
+    margin-top: $s;
+    margin-bottom: $s;
 
-        @include mobile {
-            $s: 20px;
-            margin-top: $s;
-            margin-bottom: $s;
-        }
+    @include mobile {
+      $s: 10px;
+      margin-top: $s;
+      margin-bottom: $s;
     }
-    &.spacing-m {
-        $s: 25px;
-        margin-top: $s;
-        margin-bottom: $s;
+  }
 
-        @include mobile {
-            $s: 15px;
-            margin-top: $s;
-            margin-bottom: $s;
-        }
+  &.spacing-xxs {
+    $s: 10px;
+    margin-top: $s;
+    margin-bottom: $s;
+
+    @include mobile {
+      $s: 6px;
+      margin-top: $s;
+      margin-bottom: $s;
     }
-    &.spacing-s {
-        $s: 20px;
-        margin-top: $s;
-        margin-bottom: $s;
+  }
+
+  &.spacing-xxxs {
+    $s: 7px;
+    margin-top: $s;
+    margin-bottom: $s;
+
+    @include mobile {
+      $s: 4px;
+      margin-top: $s;
+      margin-bottom: $s;
     }
-    &.spacing-xs {
-        $s: 15px;
-        margin-top: $s;
-        margin-bottom: $s;
-
-        @include mobile {
-            $s: 10px;
-            margin-top: $s;
-            margin-bottom: $s;
-        }
-    }
-
-    &.spacing-xxs {
-        $s: 10px;
-        margin-top: $s;
-        margin-bottom: $s;
-
-        @include mobile {
-            $s: 6px;
-            margin-top: $s;
-            margin-bottom: $s;
-        }
-    }
-
-    &.spacing-xxxs {
-        $s: 7px;
-        margin-top: $s;
-        margin-bottom: $s;
-
-        @include mobile {
-            $s: 4px;
-            margin-top: $s;
-            margin-bottom: $s;
-        }
-    }
+  }
 }

@@ -1,33 +1,33 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 ion-skeleton-text {
-    line-height: 13px;
+  line-height: 13px;
 }
 
 ion-skeleton-text:last-child {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 ion-avatar {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .SkeletonFilterCard--badge {
-    width: 30%;
-    height: 40px;
-    margin-right: 16px;
-    @include mobile {
-        height: 30px;
-    }
+  width: 30%;
+  height: 40px;
+  margin-right: 16px;
+  @include mobile {
+    height: 30px;
+  }
 }
 
 .SkeletonFilterCard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .SkeletonFilterCard--wrapper {
-    width: 90%;
+  width: 90%;
 }

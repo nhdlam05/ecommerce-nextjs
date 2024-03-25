@@ -1,76 +1,76 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .Dropdown--select {
+  border-radius: $brad-l;
+  border: 1px solid rgba($c-primary, 0.2);
+  margin-bottom: 5px;
+  position: relative;
+
+  .Dropdown--Item {
+    border-bottom: none;
     border-radius: $brad-l;
-    border: 1px solid rgba($c-primary, 0.2);
-    margin-bottom: 5px;
-    position: relative;
-
-    .Dropdown--Item {
-        border-bottom: none;
-        border-radius: $brad-l;
-        &:hover {
-            background-color: $c-white;
-        }
+    &:hover {
+      background-color: $c-white;
     }
+  }
 
-    .Dropdown--toggle {
-        position: absolute;
-        right: 20px;
-        top: 18px;
-        height: 17px;
-        z-index: 1;
-        font-size: 1.2rem;
-        svg {
-            color: rgba($c-primary, 0.8);
-            cursor: pointer;
-        }
+  .Dropdown--toggle {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    height: 17px;
+    z-index: 1;
+    font-size: 1.2rem;
+    svg {
+      color: rgba($c-primary, 0.8);
+      cursor: pointer;
     }
+  }
 
-    .Dropdown--toggleButton {
-        &.open {
-            transform: rotate(180deg);
-        }
+  .Dropdown--toggleButton {
+    &.open {
+      transform: rotate(180deg);
     }
+  }
 }
 
 .Dropdown--options {
-    border-radius: $brad-l;
-    border: 1px solid rgba($c-primary, 0.2);
+  border-radius: $brad-l;
+  border: 1px solid rgba($c-primary, 0.2);
 }
 
 .Dropdown--Item {
-    border-bottom: 1px solid rgba($c-primary, 0.2);
-    width: 100%;
-    padding: 12px 15px;
-    padding-bottom: 10px;
-    height: 55px;
+  border-bottom: 1px solid rgba($c-primary, 0.2);
+  width: 100%;
+  padding: 12px 15px;
+  padding-bottom: 10px;
+  height: 55px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $c-green-1;
+
+    &:first-child {
+      border-top-left-radius: $brad-l;
+      border-top-right-radius: $brad-l;
+    }
 
     &:last-child {
-        border-bottom: none;
+      border-bottom-left-radius: $brad-l;
+      border-bottom-right-radius: $brad-l;
     }
+  }
 
-    &:hover,
-    &:active {
-        background-color: $c-green-1;
+  svg {
+    color: $c-primary;
+    margin-right: 8px;
+  }
 
-        &:first-child {
-            border-top-left-radius: $brad-l;
-            border-top-right-radius: $brad-l;
-        }
-
-        &:last-child {
-            border-bottom-left-radius: $brad-l;
-            border-bottom-right-radius: $brad-l;
-        }
-    }
-
-    svg {
-        color: $c-primary;
-        margin-right: 8px;
-    }
-
-    .Dropdown--ItemContent {
-        text-align: left;
-    }
+  .Dropdown--ItemContent {
+    text-align: left;
+  }
 }

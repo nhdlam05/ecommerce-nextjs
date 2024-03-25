@@ -1,43 +1,43 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .AccordionGroup {
-    .MuiPaper-root {
-        background: transparent;
+  .MuiPaper-root {
+    background: transparent;
+  }
+  .MuiAccordion-root.Mui-expanded {
+    box-shadow: $bs-light;
+    background: $c-white;
+  }
+
+  &.variant-contained {
+    background-color: $c-white;
+    border-radius: $brad-l;
+    box-shadow: $bs-short;
+    .Title {
+      margin: 8px 0;
+    }
+
+    .MuiAccordion-root.Mui-expanded {
+      border-radius: $brad-l;
+    }
+  }
+
+  &.variant-outlined {
+    .MuiAccordionSummary-root {
+      padding: 0;
+      border-bottom: 1px solid rgba($c-primary, $alpha: 0.2);
     }
     .MuiAccordion-root.Mui-expanded {
-        box-shadow: $bs-light;
-        background: $c-white;
+      box-shadow: none;
     }
+  }
 
-    &.variant-contained {
-        background-color: $c-white;
-        border-radius: $brad-l;
-        box-shadow: $bs-short;
-        .Title {
-            margin: 8px 0;
-        }
-
-        .MuiAccordion-root.Mui-expanded {
-            border-radius: $brad-l;
-        }
+  &.variant-modal {
+    border-radius: $brad-l;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    .MuiAccordion-root.Mui-expanded {
+      border-radius: $brad-l;
     }
-
-    &.variant-outlined {
-        .MuiAccordionSummary-root {
-            padding: 0;
-            border-bottom: 1px solid rgba($c-primary, $alpha: 0.2);
-        }
-        .MuiAccordion-root.Mui-expanded {
-            box-shadow: none;
-        }
-    }
-
-    &.variant-modal {
-        border-radius: $brad-l;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        background-color: transparent;
-        .MuiAccordion-root.Mui-expanded {
-            border-radius: $brad-l;
-        }
-    }
+  }
 }

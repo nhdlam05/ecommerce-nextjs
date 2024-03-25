@@ -1,3 +1,3 @@
-import AnnouncementBar from './AnnouncementBar';
+import AnnouncementBar from './AnnouncementBar'
 
-export default AnnouncementBar;
+export default AnnouncementBar

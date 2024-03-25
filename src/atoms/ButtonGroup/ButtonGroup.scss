@@ -1,52 +1,52 @@
 @import 'aepsy-ui/styles/utils.scss';
 
 .ButtonGroup {
+  &:hover,
+  &.active {
+    border-color: rgba($c-rose-1, 0.2);
+  }
+  .ButtonGroup--Item {
+    height: 56px;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    background-color: $c-white;
+    border-left: 2px solid $c-rose-1;
+    cursor: pointer;
+
+    &.top {
+      border-bottom: 2px solid $c-rose-1;
+    }
+
+    &.bottom {
+      border-top: 2px solid $c-rose-1;
+    }
+
+    &:first-child {
+      border-left: none;
+    }
+
     &:hover,
     &.active {
-        border-color: rgba($c-rose-1, 0.2);
+      background-color: $c-rose-1;
     }
-    .ButtonGroup--Item {
-        height: 56px;
-        width: 100%;
-        align-self: center;
-        display: flex;
-        background-color: $c-white;
-        border-left: 2px solid $c-rose-1;
-        cursor: pointer;
 
-        &.top {
-            border-bottom: 2px solid $c-rose-1;
-        }
+    // @include mobile {
+    //     opacity: 0.6;
+    //     &.active {
+    //         background-color: $c-white;
+    //         opacity: 1;
+    //         &.top {
+    //             border-bottom: 2px solid $c-rose-4;
+    //         }
 
-        &.bottom {
-            border-top: 2px solid $c-rose-1;
-        }
-
-        &:first-child {
-            border-left: none;
-        }
-
-        &:hover,
-        &.active {
-            background-color: $c-rose-1;
-        }
-
-        // @include mobile {
-        //     opacity: 0.6;
-        //     &.active {
-        //         background-color: $c-white;
-        //         opacity: 1;
-        //         &.top {
-        //             border-bottom: 2px solid $c-rose-4;
-        //         }
-
-        //         &.bottom {
-        //             border-top: 2px solid $c-rose-4;
-        //         }
-        //     }
-        // }
-    }
-    .Button.variant-inline:hover {
-        opacity: 1;
-    }
+    //         &.bottom {
+    //             border-top: 2px solid $c-rose-4;
+    //         }
+    //     }
+    // }
+  }
+  .Button.variant-inline:hover {
+    opacity: 1;
+  }
 }
