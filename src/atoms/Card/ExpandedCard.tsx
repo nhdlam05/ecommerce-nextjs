@@ -1,4 +1,3 @@
-import Icon, { IconExpand } from 'atoms/Icon'
 import Module from 'atoms/Module/Module'
 import './ExpandedCard.scss'
 
@@ -15,7 +14,7 @@ const ExpandedCard: React.FC<Props> = ({ children, iconSize = 'xxs', onClick, ..
     <div className='ExpandedCard' onClick={onClick}>
       <Module {...others}>
         <div className='ExpandedCard--icon'>
-          <Icon icon={<IconExpand />} theme='highlighted' size={iconSize} />
+          'Icon expand'
         </div>
 
         {children}

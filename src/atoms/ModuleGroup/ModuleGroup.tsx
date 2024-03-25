@@ -12,7 +12,7 @@ interface Props {
   buttonLabel?: any
   buttonOnClick?: () => void
   theme?: 'dark' | 'white' | 'smart'
-  align?: 'left' | 'center' | 'center'
+  align?: 'left' | 'center'
   startSlot?: React.ReactNode
   endSlot?: React.ReactNode
   children: React.ReactNode

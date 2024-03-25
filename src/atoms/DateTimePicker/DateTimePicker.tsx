@@ -1,7 +1,7 @@
 import { DatetimeChangeEventDetail, IonDatetime, useIonModal } from '@ionic/react'
 import Text from 'atoms/Text/Text'
 import moment, { Moment } from 'moment'
-import { renderDateTime } from 'util/time/formatTime'
+import { renderDateTime } from 'utils/time/formatTime'
 import './DateTimePicker.scss'
 
 interface Props {
