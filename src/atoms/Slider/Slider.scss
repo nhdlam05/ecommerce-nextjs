@@ -1,0 +1,13 @@
+.Slider {
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .swiper-pagination {
+        bottom: 90% !important;
+    }
+
+    .Slider--Slide {
+        top: 15% !important;
+    }
+}

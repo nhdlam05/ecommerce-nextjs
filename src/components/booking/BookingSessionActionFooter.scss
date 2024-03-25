@@ -1,0 +1,32 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.BookingSessionActionFooter {
+    padding-bottom: 10px;
+
+    @include mobile {
+        padding-bottom: 0px;
+    }
+}
+
+.BookingSessionActionFooter--inner {
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+}
+
+.BookingSessionActionFooter--slot {
+    min-width: 33%;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    &.is-start {
+        text-align: left;
+
+        @include mobile {
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}

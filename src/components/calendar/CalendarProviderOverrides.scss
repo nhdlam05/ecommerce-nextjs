@@ -1,0 +1,12 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.CalendarProviderOverrides {
+}
+
+.CalendarProviderOverrides--header {
+    padding: $itemPadding;
+
+    @include mobile {
+        padding: $itemPaddingMobile;
+    }
+}

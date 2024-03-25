@@ -1,0 +1,23 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.AskForTakingNoteModal {
+    .AskForTakingNoteModal--iconWrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        .AskForTakingNoteModal--icon {
+            background-color: $c-beige-1;
+            border-radius: $brad-l;
+            padding: 30px;
+            position: relative;
+
+            .AskForTakingNoteModal--badgeNew {
+                position: absolute;
+                top: -10px;
+                left: -20px;
+            }
+        }
+    }
+}

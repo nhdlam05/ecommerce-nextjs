@@ -1,0 +1,216 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.Dialog {
+    @include above-mobile {
+        overflow-y: auto;
+    }
+}
+
+.Dialog--extra {
+    position: absolute;
+    background: $c-white;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+
+    @include mobile {
+        transition: all 0.3s ease-out;
+    }
+
+    &.shown {
+        left: 0;
+    }
+
+    .Dialog--module {
+        box-shadow: none;
+    }
+
+    .Dialog--contentWrapper {
+        max-height: 80vh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Dialog--content {
+        padding: 0;
+    }
+
+    .Header.hideBottomLine {
+        min-height: unset !important;
+    }
+}
+
+.Dialog--content {
+    padding: $modalPadding;
+
+    @include mobile {
+        padding: $modalPaddingMobile;
+    }
+}
+
+.Dialog--contentWrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    max-height: 75vh;
+
+    &.has-footer {
+        padding-bottom: 115px;
+    }
+
+    &.footer-size-l {
+        padding-bottom: 225px;
+    }
+}
+
+.Dialog--backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 899 !important;
+    background-color: rgba($c-black, 0.5);
+    height: 100vh;
+    width: 100%;
+    transition: opacity 300ms ease;
+}
+
+.Dialog--module {
+    overflow: hidden;
+    background-color: $c-white;
+    will-change: transform;
+    transition: transform 185ms cubic-bezier(0.25, 0, 0, 1);
+    // transform: translateY(0);
+
+    @include above-mobile {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 999 !important;
+        border-radius: $brad-xl;
+        width: 100%;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+
+        &.container-tiny {
+            max-width: $module-max-width;
+        }
+        &.container-short {
+            max-width: $tiny-width;
+        }
+        &.container-large {
+            max-width: $short-width;
+        }
+    }
+
+    &.container-fullScreen {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    @include mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: 999 !important;
+        border-top-right-radius: $brad-xl;
+        border-top-left-radius: $brad-xl;
+        box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.1);
+        // min-height: 200px;
+        width: 100%;
+        transform: translateY(0);
+    }
+}
+
+.Dialog--header {
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 30px;
+    &.no-padding {
+        margin-bottom: 0;
+    }
+    .Dialog--headerDivider {
+        width: 100%;
+        height: 1px;
+        background-color: $c-light-gray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @include mobile {
+            margin-top: 3px;
+            margin-bottom: 8px;
+        }
+    }
+    .Dialog--dragIndicator {
+        $width: 30px;
+        $height: 4px;
+
+        width: $width;
+        height: $height;
+        border-radius: $height;
+        background-color: rgba($c-black, 0.2);
+        cursor: pointer;
+        margin: 0 auto;
+        margin-bottom: $modalPadding;
+        display: none;
+
+        @include mobile {
+            display: block;
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.Dialog--footer {
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba($c-white, 1) 50%,
+        rgba($c-white, 0)
+    );
+    padding: $modalPadding;
+    border-bottom-left-radius: $brad-xl;
+    border-bottom-right-radius: $brad-xl;
+    @include mobile {
+        padding: $modalPaddingMobile;
+    }
+
+    @include nativeApp {
+        padding-bottom: $modalPaddingMobile + $nativeSafeSpaceBottom;
+    }
+
+    &.bg-white {
+        background: white;
+    }
+}
+
+.DialogFullHeader--left {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    @include mobile {
+        top: -3px;
+    }
+}
+
+.DialogFullHeader--right {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    @include mobile {
+        top: -3px;
+    }
+}

@@ -1,0 +1,110 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.Module {
+    position: relative;
+    background-color: $c-white;
+    transition: all 170ms ease-in-out;
+
+    &.theme-light {
+        background-color: $c-beige-1;
+    }
+
+    &.theme-purple {
+        border: 2px solid $c-purple-4 !important;
+        &:hover {
+            border: 2px solid rgba($c-purple-4, 0.5) !important;
+        }
+    }
+
+    &.variant-modal {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        background-color: transparent;
+    }
+
+    &.radius-m {
+        border-radius: $brad-m;
+    }
+
+    &.radius-l {
+        border-radius: $brad-l;
+    }
+
+    &.radius-xl {
+        border-radius: $brad-xl;
+    }
+
+    &.radius-giant {
+        border-radius: $brad-giant;
+    }
+
+    &.padding-l {
+        padding: 50px;
+
+        @include mobile {
+            padding: 30px;
+        }
+    }
+
+    &.padding-none {
+        padding: 0;
+        overflow: hidden !important;
+
+        @include mobile {
+            padding: 0;
+        }
+    }
+
+    &.padding-xl {
+        padding: 60px;
+
+        @include mobile {
+            padding: 40px;
+        }
+    }
+
+    &.padding-m {
+        padding: 30px;
+
+        @include mobile {
+            padding: 20px;
+        }
+    }
+    &.padding-s {
+        padding: 20px;
+
+        @include mobile {
+            padding: 15px;
+        }
+    }
+    &.padding-xs {
+        padding: 10px;
+
+        @include mobile {
+            padding: 10px;
+        }
+    }
+
+    &.is-highlighted {
+        box-shadow: $bs-large;
+    }
+
+    &.is-highlighted-short {
+        box-shadow: $bs-short;
+    }
+
+    &.is-inactive {
+        opacity: 0.6;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.Module--title {
+    padding-bottom: 10px;
+
+    @include mobile {
+        padding-bottom: 5px;
+    }
+}

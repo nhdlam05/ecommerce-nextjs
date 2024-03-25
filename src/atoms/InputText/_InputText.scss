@@ -1,0 +1,19 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.InputText {
+    .MuiFormControl-root {
+        width: 100%;
+    }
+
+    .MuiOutlinedInput-root {
+        border-radius: 12px;
+    }
+
+    .MuiFormHelperText-root {
+        font-size: 0.85rem;
+    }
+
+    &.fullWidth {
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.OverlappingThemedHeader {
+    background-color: $c-gradient-green-median;
+    background-image: $c-gradient-green;
+
+    // HEIGHT
+    &.height-s {
+        height: 240px;
+
+        @include tablet {
+            height: 210px;
+        }
+
+        @include mobile {
+            height: 160px;
+        }
+    }
+
+    &.height-m {
+        height: 300px;
+
+        @include tablet {
+            height: 260px;
+        }
+
+        @include mobile {
+            height: 210px;
+        }
+    }
+
+    // overlapSize
+    &.overlapSize-m {
+        margin-bottom: -110px;
+
+        @include tablet {
+            margin-bottom: -90px;
+        }
+
+        @include mobile {
+            margin-bottom: -80px;
+        }
+    }
+
+    &.overlapSize-l {
+        margin-bottom: -160px;
+
+        @include tablet {
+            margin-bottom: -150px;
+        }
+
+        @include mobile {
+            margin-bottom: -130px;
+        }
+    }
+}

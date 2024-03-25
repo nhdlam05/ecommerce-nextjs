@@ -1,0 +1,43 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.OrderedCard {
+    display: flex;
+    background-color: $c-white;
+    border-radius: $brad-giant;
+    padding: 30px;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .OrderedCard--visual {
+        margin-right: 20px;
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .OrderedCard--content {
+        margin: 10px 0;
+    }
+
+    &.has-image {
+        padding-left: 0px;
+
+        @include mobile {
+            padding-top: 0px;
+            padding-left: 20px;
+        }
+        .Title.size-xxl {
+            @include mobile {
+                font-size: 56px;
+            }
+        }
+
+        .OrderedCard--content {
+            margin: 0;
+        }
+    }
+}

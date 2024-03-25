@@ -1,0 +1,120 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.OverlappingContent {
+    min-height: 100%;
+    background-color: $c-beige-1;
+
+    // HEIGHT
+    &.height-s {
+        margin-top: 140px;
+
+        @include tablet {
+            margin-top: 110px;
+        }
+
+        @include mobile {
+            margin-top: 80px;
+        }
+    }
+
+    &.height-m {
+        margin-top: 180px;
+
+        @include tablet {
+            margin-top: 160px;
+        }
+
+        @include mobile {
+            margin-top: 140px;
+        }
+    }
+
+    &.height-l {
+        margin-top: 260px;
+
+        @include tablet {
+            margin-top: 210px;
+        }
+
+        @include mobile {
+            margin-top: 220px;
+        }
+    }
+
+    &.height-xxl {
+        margin-top: 350px;
+
+        @include tablet {
+            margin-top: 300px;
+        }
+
+        @include mobile {
+            margin-top: 260px;
+        }
+    }
+
+    // overlapSize
+    &.overlapSize-s .OverlappingContent--content {
+        top: -80px;
+
+        @include tablet {
+            top: -60px;
+        }
+
+        @include mobile {
+            top: -50px;
+        }
+    }
+
+    &.overlapSize-m .OverlappingContent--content {
+        top: -110px;
+
+        @include tablet {
+            top: -90px;
+        }
+
+        @include mobile {
+            top: -80px;
+        }
+    }
+
+    &.overlapSize-l .OverlappingContent--content {
+        top: -160px;
+
+        @include tablet {
+            top: -150px;
+        }
+
+        @include mobile {
+            top: -130px;
+        }
+    }
+
+    &.overlapSize-xl .OverlappingContent--content {
+        top: -220px;
+
+        @include tablet {
+            top: -190px;
+        }
+
+        @include mobile {
+            top: -190px;
+        }
+    }
+
+    &.overlapSize-xxl .OverlappingContent--content {
+        top: -280px;
+
+        @include tablet {
+            top: -250px;
+        }
+
+        @include mobile {
+            top: -240px;
+        }
+    }
+}
+
+.OverlappingContent--content {
+    position: relative;
+}

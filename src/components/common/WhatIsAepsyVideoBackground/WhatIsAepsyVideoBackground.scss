@@ -1,0 +1,72 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.WhatIsAepsyVideoBackground {
+    position: relative;
+    height: 400px;
+    border-radius: $brad-giant;
+    margin-bottom: 40px;
+
+    @include mobile {
+        height: 620px;
+    }
+
+    video {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: $brad-giant;
+
+        &.video-mobile {
+            @include above-mobile {
+                display: none;
+            }
+        }
+
+        &.video-desktop {
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    .green-gradient-background {
+        border-radius: $brad-giant;
+    }
+}
+.WhatIsAepsyVideoBackground--bg {
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    transition: all 220ms ease-in-out;
+    opacity: 0.8;
+    z-index: 1;
+    border-radius: $brad-giant;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.WhatIsAepsyVideoBackground--inner {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px;
+        height: 100%;
+        justify-content: space-between;
+        .Title {
+            text-align: left !important;
+        }
+    }
+}

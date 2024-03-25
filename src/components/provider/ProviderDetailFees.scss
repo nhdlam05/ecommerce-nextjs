@@ -1,0 +1,13 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.ProviderDetailFees--priceWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.ProviderDetailFees--duration {
+    @include mobile {
+        padding-right: 8px;
+        padding-left: 12px;
+    }
+}

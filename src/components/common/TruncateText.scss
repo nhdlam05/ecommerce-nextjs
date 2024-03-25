@@ -1,0 +1,10 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.TruncateText {
+    cursor: pointer;
+}
+
+.TruncateText--link {
+    display: inline-block;
+    color: $c-rose-4;
+}

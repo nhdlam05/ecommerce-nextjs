@@ -1,0 +1,43 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.CalendarTimeInterval {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+    @include mobile {
+        justify-content: flex-start;
+        // justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
+.CalendarTimeInterval--input {
+    width: 100%;
+    max-width: 130px;
+    min-width: 100px;
+
+    .Select,
+    .Select .MuiFormControl-root {
+        width: 100%;
+    }
+
+    .MuiOutlinedInput-input {
+        padding: 17px 14px;
+        @include mobile {
+            padding: 14px 12px;
+        }
+    }
+}
+
+.CalendarTimeInterval--arrow {
+    opacity: 0.4;
+    margin: 5px;
+}
+
+// DropDown
+.MuiMenu-paper {
+    max-height: 300px !important;
+}

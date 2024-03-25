@@ -1,0 +1,48 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.DateTimePicker--wrapper {
+    .MuiOutlinedInput-root {
+        border-radius: $brad-l;
+        .MuiOutlinedInput-notchedOutline {
+            border-color: rgba($c-primary, 0.2);
+        }
+        &:hover {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: rgba($c-primary, 0.2);
+            }
+        }
+    }
+}
+
+.DateTimePicker {
+    position: relative;
+    button {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+    }
+    .DataTimePicker--input {
+        border-radius: $brad-l;
+        border: 1px solid rgba($c-primary, 0.2);
+        padding: 14px;
+
+        &.is-error {
+            border-color: $c-red;
+        }
+    }
+}
+
+ion-modal.DateTimePicker--modal {
+    --width: 350px;
+    --height: 450px;
+    ion-datetime {
+        font-size: 16px;
+        height: 450px;
+    }
+}
+ion-picker-column-internal {
+    font-size: 16px;
+    width: 28px;
+    cursor: pointer;
+}

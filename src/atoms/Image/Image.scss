@@ -1,0 +1,126 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.BaseImage {
+    &.size-auto {
+        .Image--inner {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.Image {
+    pointer-events: none;
+
+    .Image--inner {
+        display: inline-block;
+
+        &.is-loading {
+            opacity: 0;
+        }
+
+        &.object-fit-cover {
+            object-fit: cover;
+        }
+
+        &.object-fit-contain {
+            object-fit: contain;
+        }
+    }
+
+    .Image-Loader {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    &.direction-vertical {
+        height: 340px;
+        width: 254px;
+    }
+
+    &.direction-horizontal {
+        width: 254px;
+        height: 193px;
+    }
+
+    &.size-auto {
+        .Image--inner {
+            height: 100%;
+        }
+    }
+
+    &.size-xxs {
+        .Image--inner {
+            height: 35px;
+
+            @include mobile {
+                height: 25px;
+            }
+        }
+    }
+
+    &.size-xs {
+        .Image--inner {
+            height: 90px;
+
+            @include mobile {
+                height: 70px;
+            }
+        }
+    }
+
+    &.size-s {
+        .Image--inner {
+            height: 130px;
+
+            @include mobile {
+                height: 110px;
+            }
+        }
+    }
+
+    &.size-m {
+        .Image--inner {
+            height: 160px;
+
+            @include mobile {
+                height: 130px;
+            }
+        }
+    }
+
+    &.size-l {
+        .Image--inner {
+            height: 220px;
+
+            @include mobile {
+                height: 170px;
+            }
+        }
+    }
+
+    &.size-xl {
+        .Image--inner {
+            height: 250px;
+
+            @include mobile {
+                height: 220px;
+            }
+        }
+    }
+
+    // Alignement
+    &.align-center {
+        text-align: center;
+    }
+
+    &.align-left {
+        text-align: left;
+    }
+
+    &.align-right {
+        text-align: right;
+    }
+}
