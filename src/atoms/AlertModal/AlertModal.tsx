@@ -32,17 +32,17 @@ const AlertModal: React.FC<Props> = ({
     const buttons = React.useMemo(() => {
         const primaryButton = {
             text: mainButton.label,
-            handler: mainButton.onClick,
+            handler: mainButton?.onClick,
         };
 
         return [
             ...(secondaryButton
                 ? [
                       {
-                          text: translate('generic.go.back'),
-                          role: 'cancel',
-                          cssClass: 'secondary',
-                          handler: secondaryButton.onClick,
+                          text: 'back' || null,
+                          role: 'cancel' || null,
+                          cssClass: 'secondary' || null,
+                          handler: secondaryButton?.onClick,
                       },
                   ]
                 : []),
