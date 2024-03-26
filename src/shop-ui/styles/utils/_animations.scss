@@ -24,9 +24,9 @@ Transitions
 ========================================================================== */
 
 @mixin fast-transition($prop: all) {
-    transition: $prop 175ms ease-in-out;
+  transition: $prop 175ms ease-in-out;
 }
 
 @mixin base-transition($prop: all) {
-    transition: $prop 300ms ease-in-out;
+  transition: $prop 300ms ease-in-out;
 }

@@ -13,9 +13,7 @@ const ExpandedCard: React.FC<Props> = ({ children, iconSize = 'xxs', onClick, ..
   return (
     <div className='ExpandedCard' onClick={onClick}>
       <Module {...others}>
-        <div className='ExpandedCard--icon'>
-          'Icon expand'
-        </div>
+        <div className='ExpandedCard--icon'>'Icon expand'</div>
 
         {children}
       </Module>

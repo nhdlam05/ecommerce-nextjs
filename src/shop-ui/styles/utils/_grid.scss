@@ -3,46 +3,46 @@
 @use 'sass:math';
 
 @mixin grid($device, $one, $two) {
-    .#{$device}_#{$one}_#{$two} {
-        width: math.div($one, $two) * 100%;
-        float: left;
+  .#{$device}_#{$one}_#{$two} {
+    width: math.div($one, $two) * 100%;
+    float: left;
 
-        @include mobile {
-            width: 100%;
-        }
+    @include mobile {
+      width: 100%;
     }
+  }
 }
 
 @mixin allGrids($device) {
-    @include grid($device, 1, 1);
-    @include grid($device, 1, 2);
-    @include grid($device, 1, 3);
-    @include grid($device, 2, 3);
-    @include grid($device, 1, 4);
+  @include grid($device, 1, 1);
+  @include grid($device, 1, 2);
+  @include grid($device, 1, 3);
+  @include grid($device, 2, 3);
+  @include grid($device, 1, 4);
 
-    @include grid($device, 1, 4);
-    @include grid($device, 2, 4);
-    @include grid($device, 3, 4);
+  @include grid($device, 1, 4);
+  @include grid($device, 2, 4);
+  @include grid($device, 3, 4);
 }
 
 @include allGrids('g');
 
 @mixin mGrid($pre, $one, $two) {
-    .#{$pre}_#{$one}_#{$two} {
-        width: math.div($one, $two) * 100%;
-        float: left;
-    }
+  .#{$pre}_#{$one}_#{$two} {
+    width: math.div($one, $two) * 100%;
+    float: left;
+  }
 }
 
 @mixin allMGrids($pre) {
-    @include mGrid($pre, 1, 2);
-    @include mGrid($pre, 1, 3);
-    @include mGrid($pre, 2, 3);
-    @include mGrid($pre, 1, 4);
+  @include mGrid($pre, 1, 2);
+  @include mGrid($pre, 1, 3);
+  @include mGrid($pre, 2, 3);
+  @include mGrid($pre, 1, 4);
 
-    @include mGrid($pre, 1, 4);
-    @include mGrid($pre, 2, 4);
-    @include mGrid($pre, 3, 4);
+  @include mGrid($pre, 1, 4);
+  @include mGrid($pre, 2, 4);
+  @include mGrid($pre, 3, 4);
 }
 
 @include allMGrids('m');

@@ -9,34 +9,34 @@ Register Font
 
 // FONT WEIGHT
 @mixin font-weight($style) {
-    @if $style == 'light' {
-        font-weight: 400;
-    }
+  @if $style == 'light' {
+    font-weight: 400;
+  }
 
-    @if ($style == 'normal' or $style == 'book' or $style == 'regular') {
-        font-weight: 400;
-    }
+  @if ($style == 'normal' or $style == 'book' or $style == 'regular') {
+    font-weight: 400;
+  }
 
-    @if $style == 'medium' {
-        font-weight: 500;
-    }
+  @if $style == 'medium' {
+    font-weight: 500;
+  }
 
-    @if $style == 'bold' {
-        font-weight: 500;
-    }
+  @if $style == 'bold' {
+    font-weight: 500;
+  }
 }
 
 @mixin main-font {
-    font-family: 'TTNormsPro', sans-serif;
-    font-display: swap;
+  font-family: 'TTNormsPro', sans-serif;
+  font-display: swap;
 }
 
 @mixin sec-font {
-    font-family: 'Recoleta', serif;
-    font-display: swap;
+  font-family: 'Recoleta', serif;
+  font-display: swap;
 }
 
 @mixin textantialiasing() {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

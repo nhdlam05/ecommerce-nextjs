@@ -3,14 +3,14 @@
 import { ReactNode, ReactElement } from 'react'
 
 interface GuestGuardProps {
-    children: ReactNode
-    fallback: ReactElement | null
+  children: ReactNode
+  fallback: ReactElement | null
 }
 
 const GuestGuard = (props: GuestGuardProps) => {
-    const { children, fallback } = props
+  const { children, fallback } = props
 
-    return <>{children}</>
+  return <>{children}</>
 }
 
 export default GuestGuard

@@ -142,11 +142,7 @@ $c-gradient-green-start: #597967;
 $c-gradient-green-end: #c7e2bb;
 $c-gradient-green-median: #a2bf9f;
 
-$c-gradient-green: linear-gradient(
-    20deg,
-    $c-gradient-green-start,
-    $c-gradient-green-end
-);
+$c-gradient-green: linear-gradient(20deg, $c-gradient-green-start, $c-gradient-green-end);
 
 //
 //
@@ -160,21 +156,21 @@ $light-elastic: cubic-bezier(0.3, 0.01, 0.27, 1.21);
 $elastic: cubic-bezier(0.3, -0.21, 0.27, 1.51);
 
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    20% {
-        transform: scale(1.4);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-    80% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 // box shadow

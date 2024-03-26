@@ -111,11 +111,7 @@ const Button: React.FC<Props> = ({
 
         {icon ? <i className='Button--icon'>{icon}</i> : ''}
 
-        {iconArrow && (
-          <i className='Button--icon'>
-            icon arrow
-          </i>
-        )}
+        {iconArrow && <i className='Button--icon'>icon arrow</i>}
       </button>
     )
   }

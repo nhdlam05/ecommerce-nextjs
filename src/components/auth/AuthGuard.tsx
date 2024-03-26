@@ -3,14 +3,14 @@
 import { ReactNode, ReactElement } from 'react'
 
 interface AuthGuardProps {
-    children: ReactNode
-    fallback: ReactElement | null
+  children: ReactNode
+  fallback: ReactElement | null
 }
 
 const AuthGuard = (props: AuthGuardProps) => {
-    const { children, fallback } = props
+  const { children, fallback } = props
 
-    return <>{children}</>
+  return <>{children}</>
 }
 
 export default AuthGuard

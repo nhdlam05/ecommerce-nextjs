@@ -34,9 +34,9 @@ import { SettingsConsumer, SettingsProvider } from 'contexts/SettingsContext'
 import ReactHotToast from 'components/react-hot-toast'
 import { useSettings } from 'hooks/useSettings'
 import ThemeComponent from 'theme/ThemeComponent'
-import GuestGuard from "../components/auth/GuestGuard";
-import AuthGuard from "../components/auth/AuthGuard";
-import AclGuard from "../components/auth/AclGuard";
+import GuestGuard from '../components/auth/GuestGuard'
+import AuthGuard from '../components/auth/AuthGuard'
+import AclGuard from '../components/auth/AclGuard'
 
 type ExtendedAppProps = AppProps & {
   Component: any

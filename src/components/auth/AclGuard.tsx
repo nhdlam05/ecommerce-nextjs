@@ -6,17 +6,17 @@ import { ReactNode } from 'react'
 import type { ACLObj } from 'configs/acl'
 
 interface AclGuardProps {
-    children: ReactNode
-    authGuard?: boolean
-    guestGuard?: boolean
-    aclAbilities: ACLObj
+  children: ReactNode
+  authGuard?: boolean
+  guestGuard?: boolean
+  aclAbilities: ACLObj
 }
 
 const AclGuard = (props: AclGuardProps) => {
-    // ** Props
-    const { aclAbilities, children, guestGuard = false, authGuard = true } = props
+  // ** Props
+  const { aclAbilities, children, guestGuard = false, authGuard = true } = props
 
-    return <>{children}</>
+  return <>{children}</>
 }
 
 export default AclGuard
