@@ -1,520 +1,520 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 @mixin defaultButton() {
-  border: none;
-  position: relative;
+    border: none;
+    position: relative;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  // padding: 12px 20px;
-  font-size: 16px;
-  transition: all 75ms ease-in-out;
-  color: $c-cta;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 12px 20px;
+    font-size: 16px;
+    transition: all 75ms ease-in-out;
+    color: $c-cta;
 
-  &.radius-m {
-    border-radius: 80px;
-  }
+    &.radius-m {
+        border-radius: 80px;
+    }
 
-  &.radius-s {
-    border-radius: 40px;
-  }
+    &.radius-s {
+        border-radius: 40px;
+    }
 
-  &.radius-xs {
-    border-radius: 10px;
-  }
+    &.radius-xs {
+        border-radius: 10px;
+    }
 
-  &.radius-xxs {
-    border-radius: 6px;
-  }
+    &.radius-xxs {
+        border-radius: 6px;
+    }
 
-  @include font-weight('medium');
+    @include font-weight('medium');
 
-  &:hover {
-    transform: scale(0.996);
-  }
+    &:hover {
+        transform: scale(0.996);
+    }
 
-  &:active {
-    transform: scale(0.98);
-  }
+    &:active {
+        transform: scale(0.98);
+    }
 }
 
 .Button {
-  &.is-loading {
-    .Button--label,
-    .Button--icon {
-      opacity: 0 !important;
-    }
-  }
-
-  &.is-fullsize {
-    width: 100% !important;
-  }
-
-  &.is-halfsize {
-    width: 50% !important;
-  }
-
-  &.is-mobileFullsize {
-    @include mobile {
-      width: 100% !important;
-    }
-  }
-
-  // Align
-  &.align-right {
-    float: right;
-  }
-  &.align-left {
-    float: left;
-  }
-
-  &.align-center {
-    display: flex !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  // variant
-  &.variant-primary {
-    @include defaultButton();
-    box-shadow: $bs-short;
-
-    // THEME
-
-    &.theme-success {
-      background-color: $c-green-flashy;
-    }
-
-    &.theme-dark,
-    &.theme-highlighted {
-      background: $c-rose-4;
-      color: $c-white;
-
-      @include above-mobile {
-        &:hover,
-        &:active {
-          background: darken($c-rose-4, 5%);
+    &.is-loading {
+        .Button--label,
+        .Button--icon {
+            opacity: 0 !important;
         }
-      }
-
-      &:active {
-        background: darken($c-rose-4, 5%);
-      }
     }
-    &.theme-white {
-      background: $c-white;
-      color: $c-primary;
-      box-shadow: $bs-large;
 
-      @include above-mobile {
-        &:hover,
-        &:active {
-          background: darken($c-white, 5%);
+    &.is-fullsize {
+        width: 100% !important;
+    }
+
+    &.is-halfsize {
+        width: 50% !important;
+    }
+
+    &.is-mobileFullsize {
+        @include mobile {
+            width: 100% !important;
         }
-      }
-
-      &:active {
-        background: darken($c-white, 5%);
-      }
     }
 
-    &.theme-delete {
-      background: $c-white;
-      color: $c-rose-4;
-      box-shadow: $bs-large;
+    // Align
+    &.align-right {
+        float: right;
+    }
+    &.align-left {
+        float: left;
+    }
 
-      @include above-mobile {
-        &:hover,
-        &:active {
-          background: $c-rose-4;
-          color: $c-white;
+    &.align-center {
+        display: flex !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    // variant
+    &.variant-primary {
+        @include defaultButton();
+        box-shadow: $bs-short;
+
+        // THEME
+
+        &.theme-success {
+            background-color: $c-green-flashy;
         }
-      }
 
-      &:active {
-        background: $c-rose-4;
-        color: $c-white;
-      }
+        &.theme-dark,
+        &.theme-highlighted {
+            background: $c-rose-4;
+            color: $c-white;
+
+            @include above-mobile {
+                &:hover,
+                &:active {
+                    background: darken($c-rose-4, 5%);
+                }
+            }
+
+            &:active {
+                background: darken($c-rose-4, 5%);
+            }
+        }
+        &.theme-white {
+            background: $c-white;
+            color: $c-primary;
+            box-shadow: $bs-large;
+
+            @include above-mobile {
+                &:hover,
+                &:active {
+                    background: darken($c-white, 5%);
+                }
+            }
+
+            &:active {
+                background: darken($c-white, 5%);
+            }
+        }
+
+        &.theme-delete {
+            background: $c-white;
+            color: $c-rose-4;
+            box-shadow: $bs-large;
+
+            @include above-mobile {
+                &:hover,
+                &:active {
+                    background: $c-rose-4;
+                    color: $c-white;
+                }
+            }
+
+            &:active {
+                background: $c-rose-4;
+                color: $c-white;
+            }
+        }
+        &.theme-ghosted {
+            background: $c-rose-1;
+            color: $c-rose-4;
+            box-shadow: none;
+
+            &:hover,
+            &:active {
+                background: darken($c-rose-1, 10%);
+            }
+
+            .Button--label {
+                color: $c-rose-4;
+            }
+
+            .global_theme-green & {
+                background: $c-green-1;
+                color: $c-green-4;
+
+                &:hover,
+                &:active {
+                    background: darken($c-green-1, 10%);
+                }
+            }
+        }
+        &.theme-warning {
+            background: $c-warning;
+            color: $c-green-4;
+            box-shadow: none;
+
+            &:hover,
+            &:active {
+                background: darken($c-yellow, 10%);
+            }
+        }
+
+        &.theme-attention {
+            background: $c-dark-yellow;
+            color: $c-white;
+            box-shadow: none;
+
+            &:hover,
+            &:active {
+                background: darken($c-dark-yellow, 5%);
+            }
+        }
+
+        &.theme-danger {
+            background-color: $c-red;
+            color: $c-white;
+            box-shadow: none;
+            &:hover,
+            &:active {
+                background: darken($c-red, 5%);
+            }
+        }
+
+        &.theme-info {
+            background-color: $c-green-2;
+            color: $c-green-4;
+            box-shadow: none;
+
+            &:hover,
+            &:active {
+                background: darken($c-green-2, 10%);
+            }
+        }
+
+        &.theme-pink-gradient {
+            background: $c-pink-gradient;
+            background-size: 200% 200%;
+            animation: moveGradient 15s ease infinite;
+            color: $c-white;
+            // box-shadow: 0px 5px 40px rgba(250, 205, 191, 0.3);
+
+            &:hover,
+            &:active {
+                opacity: 0.5;
+            }
+        }
     }
-    &.theme-ghosted {
-      background: $c-rose-1;
-      color: $c-rose-4;
-      box-shadow: none;
 
-      &:hover,
-      &:active {
-        background: darken($c-rose-1, 10%);
-      }
+    &.shape-round {
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        &.size-l {
+            width: 60px;
+            height: 60px;
+        }
+    }
 
-      .Button--label {
-        color: $c-rose-4;
-      }
-
-      .global_theme-green & {
-        background: $c-green-1;
+    &.variant-outlined.theme-dark.global_theme-green {
+        border-color: rgba($c-green-4, 0.2);
         color: $c-green-4;
 
-        &:hover,
-        &:active {
-          background: darken($c-green-1, 10%);
+        .Button--label {
+            color: $c-green-4;
         }
-      }
-    }
-    &.theme-warning {
-      background: $c-warning;
-      color: $c-green-4;
-      box-shadow: none;
 
-      &:hover,
-      &:active {
-        background: darken($c-yellow, 10%);
-      }
+        @include above-mobile {
+            &:hover,
+            &:active {
+                background: rgba($c-green-4, 0.1);
+            }
+        }
     }
 
-    &.theme-attention {
-      background: $c-dark-yellow;
-      color: $c-white;
-      box-shadow: none;
+    &.variant-outlined {
+        @include defaultButton();
+        border: 1px solid $c-cta;
+        background-color: unset;
 
-      &:hover,
-      &:active {
-        background: darken($c-dark-yellow, 5%);
-      }
+        &.theme-dark  {
+            border-color: $c-cta;
+            color: $c-cta;
+        }
+
+        &.theme-light  {
+            border-color: rgba($c-cta, 0.3);
+            color: $c-cta;
+
+            .global_theme-green & {
+                border-color: rgba($c-green-4, 0.3);
+                color: $c-green-4;
+            }
+        }
+
+        &.theme-white {
+            color: $c-white;
+            border-color: rgba($c-white, 0.5);
+
+            @include above-mobile {
+                &:hover,
+                &:active {
+                    background: rgba($c-white, 0.3);
+                }
+            }
+        }
+
+        &.theme-ghosted {
+            background: transparent;
+            border-color: rgba($c-primary, 0.5);
+            color: $c-primary;
+            border-width: 2px;
+            &:hover,
+            &:active {
+                border-color: $c-primary;
+            }
+        }
+
+        .Button--icon {
+            top: 0px;
+        }
+    }
+    &.variant-link {
+        text-decoration: underline;
+        padding: 0 !important;
+        &.theme-text {
+            color: $c-text;
+            font-weight: normal;
+        }
     }
 
-    &.theme-danger {
-      background-color: $c-red;
-      color: $c-white;
-      box-shadow: none;
-      &:hover,
-      &:active {
-        background: darken($c-red, 5%);
-      }
+    &.variant-link,
+    &.variant-inline,
+    &.variant-naked {
+        @include defaultButton();
+        border: 1px solid rgba($c-cta, 0);
+        background: transparent;
+        border-radius: 0;
+
+        &.theme-dark  {
+            color: $c-cta;
+        }
+
+        &.theme-danger {
+            color: $c-red;
+        }
+
+        &.theme-highlighted {
+            color: $c-rose-4;
+        }
+
+        &.theme-white {
+            color: $c-white;
+        }
+
+        &.theme-text {
+            color: $c-text;
+        }
+
+        @include above-mobile {
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        &:active {
+            opacity: 0.4;
+        }
+        .Button--IconContainer {
+            top: -2px;
+        }
+    }
+    &.variant-inline {
+        padding: 5px 0 !important;
+        display: inline-flex;
+        text-align: left;
+        // text-decoration: underline;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        .Button--IconContainer {
+            top: -2px;
+        }
     }
 
-    &.theme-info {
-      background-color: $c-green-2;
-      color: $c-green-4;
-      box-shadow: none;
+    &.variant-light {
+        @include defaultButton();
+        background: transparent;
 
-      &:hover,
-      &:active {
-        background: darken($c-green-2, 10%);
-      }
+        &:hover {
+            &.theme-ghosted {
+                background-color: $c-rose-1;
+            }
+        }
+        .Button--IconContainer {
+            top: -2px;
+        }
+
+        &.size-xs {
+            padding: 8px 10px;
+            font-size: 16px;
+        }
     }
 
-    &.theme-pink-gradient {
-      background: $c-pink-gradient;
-      background-size: 200% 200%;
-      animation: moveGradient 15s ease infinite;
-      color: $c-white;
-      // box-shadow: 0px 5px 40px rgba(250, 205, 191, 0.3);
-
-      &:hover,
-      &:active {
-        opacity: 0.5;
-      }
-    }
-  }
-
-  &.shape-round {
-    border-radius: 100%;
-    width: 45px;
-    height: 45px;
+    // SIZE
     &.size-l {
-      width: 60px;
-      height: 60px;
-    }
-  }
+        font-size: 18px;
+        padding: 21px 30px;
 
-  &.variant-outlined.theme-dark.global_theme-green {
-    border-color: rgba($c-green-4, 0.2);
-    color: $c-green-4;
-
-    .Button--label {
-      color: $c-green-4;
-    }
-
-    @include above-mobile {
-      &:hover,
-      &:active {
-        background: rgba($c-green-4, 0.1);
-      }
-    }
-  }
-
-  &.variant-outlined {
-    @include defaultButton();
-    border: 1px solid $c-cta;
-    background-color: unset;
-
-    &.theme-dark  {
-      border-color: $c-cta;
-      color: $c-cta;
-    }
-
-    &.theme-light  {
-      border-color: rgba($c-cta, 0.3);
-      color: $c-cta;
-
-      .global_theme-green & {
-        border-color: rgba($c-green-4, 0.3);
-        color: $c-green-4;
-      }
-    }
-
-    &.theme-white {
-      color: $c-white;
-      border-color: rgba($c-white, 0.5);
-
-      @include above-mobile {
-        &:hover,
-        &:active {
-          background: rgba($c-white, 0.3);
+        svg {
+            font-size: 22px;
         }
-      }
+        @include mobile {
+            padding: 22px 27px;
+        }
     }
 
-    &.theme-ghosted {
-      background: transparent;
-      border-color: rgba($c-primary, 0.5);
-      color: $c-primary;
-      border-width: 2px;
-      &:hover,
-      &:active {
-        border-color: $c-primary;
-      }
+    &.size-m {
+        padding: 16px 22px;
+
+        svg {
+            font-size: 18px;
+        }
     }
 
-    .Button--icon {
-      top: 0px;
-    }
-  }
-  &.variant-link {
-    text-decoration: underline;
-    padding: 0 !important;
-    &.theme-text {
-      color: $c-text;
-      font-weight: normal;
-    }
-  }
+    &.size-s {
+        padding: 10px 13px;
 
-  &.variant-link,
-  &.variant-inline,
-  &.variant-naked {
-    @include defaultButton();
-    border: 1px solid rgba($c-cta, 0);
-    background: transparent;
-    border-radius: 0;
-
-    &.theme-dark  {
-      color: $c-cta;
-    }
-
-    &.theme-danger {
-      color: $c-red;
-    }
-
-    &.theme-highlighted {
-      color: $c-rose-4;
-    }
-
-    &.theme-white {
-      color: $c-white;
-    }
-
-    &.theme-text {
-      color: $c-text;
-    }
-
-    @include above-mobile {
-      &:hover {
-        opacity: 0.6;
-      }
-    }
-
-    &:active {
-      opacity: 0.4;
-    }
-    .Button--IconContainer {
-      top: -2px;
-    }
-  }
-  &.variant-inline {
-    padding: 5px 0 !important;
-    display: inline-flex;
-    text-align: left;
-    // text-decoration: underline;
-
-    &:hover {
-      opacity: 0.5;
-    }
-
-    .Button--IconContainer {
-      top: -2px;
-    }
-  }
-
-  &.variant-light {
-    @include defaultButton();
-    background: transparent;
-
-    &:hover {
-      &.theme-ghosted {
-        background-color: $c-rose-1;
-      }
-    }
-    .Button--IconContainer {
-      top: -2px;
+        svg {
+            font-size: 16px;
+        }
     }
 
     &.size-xs {
-      padding: 8px 10px;
-      font-size: 16px;
+        padding: 8px 10px;
+        font-size: 14px;
+
+        svg {
+            font-size: 14px;
+        }
+        &.shape-round {
+            width: 20px;
+            height: 20px;
+        }
     }
-  }
 
-  // SIZE
-  &.size-l {
-    font-size: 18px;
-    padding: 21px 30px;
-
-    svg {
-      font-size: 22px;
-    }
-    @include mobile {
-      padding: 22px 27px;
-    }
-  }
-
-  &.size-m {
-    padding: 16px 22px;
-
-    svg {
-      font-size: 18px;
-    }
-  }
-
-  &.size-s {
-    padding: 10px 13px;
-
-    svg {
-      font-size: 16px;
-    }
-  }
-
-  &.size-xs {
-    padding: 8px 10px;
-    font-size: 14px;
-
-    svg {
-      font-size: 14px;
-    }
-    &.shape-round {
-      width: 20px;
-      height: 20px;
-    }
-  }
-
-  &.size-xxs {
-    padding: 5px 8px;
-    font-size: 12px;
-
-    svg {
-      font-size: 10px;
-    }
-  }
-
-  &[disabled] {
-    opacity: 0.3 !important;
-
-    &:hover,
-    &:active {
-      transform: none;
-    }
-  }
-
-  .Image {
     &.size-xxs {
-      .Image--inner {
-        max-width: 35px;
-      }
+        padding: 5px 8px;
+        font-size: 12px;
+
+        svg {
+            font-size: 10px;
+        }
     }
-  }
+
+    &[disabled] {
+        opacity: 0.3 !important;
+
+        &:hover,
+        &:active {
+            transform: none;
+        }
+    }
+
+    .Image {
+        &.size-xxs {
+            .Image--inner {
+                max-width: 35px;
+            }
+        }
+    }
 }
 
 .Button--IconContainer {
-  position: relative;
+    position: relative;
 
-  .Button--indicator {
-    border: 2px solid white;
-    background-color: $c-rose-4;
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    z-index: 1;
-    transform-origin: 50% 50%;
-    animation: pulse 8s infinite;
-  }
+    .Button--indicator {
+        border: 2px solid white;
+        background-color: $c-rose-4;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        z-index: 1;
+        transform-origin: 50% 50%;
+        animation: pulse 8s infinite;
+    }
 }
 
 .Button--label {
-  transition: opacity 60ms ease;
+    transition: opacity 60ms ease;
 }
 
 .Button--icon {
-  position: relative;
-  top: 1px;
-  line-height: 1;
-  margin-left: 10px;
-  vertical-align: sub;
-  transition: opacity 60ms ease;
+    position: relative;
+    top: 1px;
+    line-height: 1;
+    margin-left: 10px;
+    vertical-align: sub;
+    transition: opacity 60ms ease;
 }
 
 .Button--loader.MuiCircularProgress-colorPrimary {
-  $s: 25px;
-  width: $s;
-  height: $s;
-  position: absolute;
-  color: $c-white;
-  top: 50%;
-  left: 50%;
-  margin-top: -$s * 0.5;
-  margin-left: -$s * 0.5;
+    $s: 25px;
+    width: $s;
+    height: $s;
+    position: absolute;
+    color: $c-white;
+    top: 50%;
+    left: 50%;
+    margin-top: -$s * 0.5;
+    margin-left: -$s * 0.5;
 
-  .theme-white & {
-    color: $c-black;
-  }
+    .theme-white & {
+        color: $c-black;
+    }
 
-  .theme-primary & {
-    color: $c-rose-4;
-  }
+    .theme-primary & {
+        color: $c-rose-4;
+    }
 }
 
 .Button--icon-left {
-  margin-right: 8px;
-  margin-left: 0px;
-  display: inherit;
+    margin-right: 8px;
+    margin-left: 0px;
+    display: inherit;
 }
 
 .Button--icon-only {
-  margin: 0;
+    margin: 0;
 }
 
 // Blink
 @keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

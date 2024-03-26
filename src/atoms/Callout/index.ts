@@ -1,3 +1,3 @@
-import Callout from './Callout'
+import Callout from './Callout';
 
-export default Callout
+export default Callout;

@@ -1,18 +1,18 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .ClickableComponent {
-  width: 100%;
-  will-change: transform;
-  transition: all 175ms $very-slow-out;
+    width: 100%;
+    will-change: transform;
+    transition: all 175ms $very-slow-out;
 
-  @include above-mobile {
-    &:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
+    @include above-mobile {
+        &:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
     }
-  }
 
-  &:active {
-    transform: translateY(2px);
-  }
+    &:active {
+        transform: translateY(2px);
+    }
 }

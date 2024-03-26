@@ -1,18 +1,18 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .RatingContainer {
-  cursor: pointer;
-  display: inline-block;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .RatingContainer--star {
-  display: inline-block;
-  margin: 0 4px;
-  transition: all 175ms $elastic;
-  will-change: transform;
+    display: inline-block;
+    margin: 0 4px;
+    transition: all 175ms $elastic;
+    will-change: transform;
 
-  &:hover,
-  &:active {
-    transform: scale(1.25);
-  }
+    &:hover,
+    &:active {
+        transform: scale(1.25);
+    }
 }

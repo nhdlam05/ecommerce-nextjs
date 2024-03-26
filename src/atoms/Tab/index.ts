@@ -1,5 +1,4 @@
-import Tab from './Tab'
+import Tab from './Tab';
+export type { TabTheme } from './Tab';
 
-export type { TabTheme } from './Tab'
-
-export default Tab
+export default Tab;

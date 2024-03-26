@@ -1,40 +1,40 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .HeroIcon {
-  &.size-l {
-    font-size: 130px;
-    line-height: 1;
-  }
-  &.size-m {
-    font-size: 90px;
-    line-height: 1;
-  }
-  &.size-s {
-    font-size: 50px;
-    line-height: 1;
-  }
-  &.size-xs {
-    font-size: 30px;
-    line-height: 1;
-  }
+    &.size-l {
+        font-size: 130px;
+        line-height: 1;
+    }
+    &.size-m {
+        font-size: 90px;
+        line-height: 1;
+    }
+    &.size-s {
+        font-size: 50px;
+        line-height: 1;
+    }
+    &.size-xs {
+        font-size: 30px;
+        line-height: 1;
+    }
 
-  &.theme-primary {
-    color: $c-green-4;
-  }
+    &.theme-primary {
+        color: $c-green-4;
+    }
 
-  &.theme-success {
-    color: $c-green;
-  }
+    &.theme-success {
+        color: $c-green;
+    }
 
-  &.theme-error {
-    color: $c-red;
-  }
+    &.theme-error {
+        color: $c-red;
+    }
 
-  &.align-center {
-    text-align: center;
-  }
+    &.align-center {
+        text-align: center;
+    }
 
-  &.is-inactive {
-    opacity: 0.3;
-  }
+    &.is-inactive {
+        opacity: 0.3;
+    }
 }

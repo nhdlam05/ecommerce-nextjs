@@ -1,0 +1,85 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+@mixin defaultButton() {
+    border-radius: 50px;
+    padding: 10px 17px;
+    font-size: 16px;
+    transition: all 155ms ease-in-out;
+    color: $c-cta;
+    @include font-weight('medium');
+
+    &:hover {
+        transform: scale(0.99);
+    }
+
+    &:active {
+        transform: scale(0.96);
+    }
+}
+
+.AddToCalendarButton {
+    display: block;
+    position: relative;
+
+    &.align-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .react-add-to-calendar__button > span {
+        @include defaultButton();
+        box-shadow: $bs-short;
+        font-size: 18px;
+        padding: 16px 26px;
+        background: $c-rose-4;
+        color: $c-white;
+        display: block;
+        cursor: pointer;
+        display: none !important;
+
+        &:hover,
+        &:active {
+            background: darken($c-rose-4, 5%);
+        }
+
+        svg {
+            font-size: 22px;
+        }
+    }
+
+    .react-add-to-calendar__dropdown {
+        &:before {
+            display: block;
+            margin: 10px 0;
+            content: '';
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            text-align: left;
+            margin-right: 10px;
+        }
+
+        a {
+            @include defaultButton();
+            display: inline-block;
+            // padding: 5px 0;
+            background-color: transparent;
+            border: 1px solid rgba($c-green-4, 0.3);
+            transition: all 120ms ease;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+                border: 1px solid rgba($c-green-4, 1);
+            }
+        }
+    }
+}

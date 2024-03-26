@@ -1,0 +1,11 @@
+.FilterBar--SearchName {
+    .MuiInputBase-root {
+        width: 100%;
+        border: 1px;
+        border-radius: 40px;
+        &:hover,
+        &:focus {
+            border: 1px;
+        }
+    }
+}

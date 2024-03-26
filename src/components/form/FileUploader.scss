@@ -1,0 +1,18 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.FileUploader--input {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    left: -9999px;
+}
+
+.FileUploader--label {
+    height: 50px;
+    width: 100%;
+    background: $c-white;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    z-index: 102;
+}

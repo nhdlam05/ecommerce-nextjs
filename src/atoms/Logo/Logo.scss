@@ -1,0 +1,64 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.Logo {
+    transition: opacity 170ms ease;
+    display: inline-block;
+
+    svg {
+        display: inline-block;
+        position: relative;
+        height: auto;
+    }
+
+    &.size-xs svg {
+        width: 70px;
+        // top: 5px;
+
+        @include mobile {
+            width: 60px;
+        }
+    }
+
+    &.size-s svg {
+        width: 85px;
+        // top: 5px;
+
+        @include mobile {
+            width: 70px;
+        }
+    }
+
+    &.size-m svg {
+        width: 120px;
+        // top: 7px;
+
+        @include mobile {
+            width: 90px;
+        }
+    }
+
+    &.size-l svg {
+        width: 140px;
+        // top: 7px;
+
+        @include mobile {
+            width: 110px;
+        }
+    }
+
+    &.theme-white {
+        path {
+            fill: $c-white;
+        }
+    }
+
+    &.theme-dark {
+        path {
+            fill: $c-green-4;
+        }
+    }
+
+    &.align-center {
+        text-align: center;
+    }
+}

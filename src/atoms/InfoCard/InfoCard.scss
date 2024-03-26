@@ -1,146 +1,146 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .InfoCard {
-  position: relative;
-  background-color: $c-white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: $bs-light;
-  transition: all 600ms cubic-bezier(0.03, 0, 0, 1);
+    position: relative;
+    background-color: $c-white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: $bs-light;
+    transition: all 600ms cubic-bezier(0.03, 0, 0, 1);
 
-  &:hover {
-    transform: translateY(-5px);
+    &:hover {
+        transform: translateY(-5px);
 
-    @include tablet-portrait {
-      transform: none;
-    }
-  }
-
-  &.format-vertical {
-    display: block;
-    align-items: center;
-    align-items: flex-start;
-
-    .InfoCard--visual {
-      display: flex;
-      // align-items: center;
-      align-items: flex-start;
-      min-height: 220px;
-      min-height: 140px;
-      // padding: 40px 0 60px 0;
-      justify-content: center;
-      justify-content: flex-start;
-
-      @include tablet-portrait {
-        min-height: 130px;
-      }
-    }
-
-    .InfoCard--content .Text {
-      @include tablet-portrait {
-        min-height: 120px;
-      }
-    }
-
-    .variant-mobileInline & {
-      .InfoCard--content .Text {
         @include tablet-portrait {
-          min-height: auto;
+            transform: none;
         }
-      }
     }
-  }
-  &.format-horizontal {
-    display: flex;
-    align-items: flex-start;
 
-    .InfoCard--visual {
-      padding-right: 30px;
-      padding-left: 10px;
-
-      @include tablet-portrait {
-        padding: 30px 0 40px 0;
-      }
-    }
-  }
-
-  &.variant-heroTitle {
-    @include tablet-portrait {
-      .InfoCard--content .Title {
-        font-size: 22px;
-      }
-
-      .InfoCard--visual {
-        min-height: 80px;
-        justify-content: flex-start;
+    &.format-vertical {
+        display: block;
+        align-items: center;
         align-items: flex-start;
-        padding: 0;
 
-        .FatNumber--hero {
-          display: inline-block;
-          margin-right: 10px;
-          font-size: 50px;
+        .InfoCard--visual {
+            display: flex;
+            // align-items: center;
+            align-items: flex-start;
+            min-height: 220px;
+            min-height: 140px;
+            // padding: 40px 0 60px 0;
+            justify-content: center;
+            justify-content: flex-start;
+
+            @include tablet-portrait {
+                min-height: 130px;
+            }
         }
 
-        .FatNumber--tagline {
-          display: inline-block;
-          margin-right: 5px;
+        .InfoCard--content .Text {
+            @include tablet-portrait {
+                min-height: 120px;
+            }
         }
-      }
+
+        .variant-mobileInline & {
+            .InfoCard--content .Text {
+                @include tablet-portrait {
+                    min-height: auto;
+                }
+            }
+        }
     }
-  }
-
-  &.variant-infoTile {
-    @include tablet-portrait {
-      padding: 20px;
-      display: block;
-
-      .InfoCard--content .Title {
-        font-size: 22px;
-      }
-
-      .InfoCard--visual {
-        // min-height: 80px;
-        margin-bottom: 10px;
-        justify-content: flex-start;
+    &.format-horizontal {
+        display: flex;
         align-items: flex-start;
-        padding: 0;
 
-        .FatNumber--hero {
-          display: inline-block;
-          margin-right: 10px;
-          font-size: 50px;
+        .InfoCard--visual {
+            padding-right: 30px;
+            padding-left: 10px;
+
+            @include tablet-portrait {
+                padding: 30px 0 40px 0;
+            }
         }
+    }
 
-        .FatNumber--tagline {
-          display: inline-block;
-          margin-right: 5px;
+    &.variant-heroTitle {
+        @include tablet-portrait {
+            .InfoCard--content .Title {
+                font-size: 22px;
+            }
+
+            .InfoCard--visual {
+                min-height: 80px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 0;
+
+                .FatNumber--hero {
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 50px;
+                }
+
+                .FatNumber--tagline {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
         }
-      }
     }
-  }
 
-  &.is-inactive {
-    background: $c-green-1;
-    opacity: 0.9;
-    box-shadow: none;
+    &.variant-infoTile {
+        @include tablet-portrait {
+            padding: 20px;
+            display: block;
 
-    &:hover {
-      transform: none;
+            .InfoCard--content .Title {
+                font-size: 22px;
+            }
 
-      @include tablet-portrait {
-        transform: none;
-      }
+            .InfoCard--visual {
+                // min-height: 80px;
+                margin-bottom: 10px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 0;
+
+                .FatNumber--hero {
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 50px;
+                }
+
+                .FatNumber--tagline {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
     }
-  }
 
-  &.is-outlined {
-    border: 1px solid rgba($c-green-4, 0.5);
+    &.is-inactive {
+        background: $c-green-1;
+        opacity: 0.9;
+        box-shadow: none;
 
-    &:hover {
-      border: 1px solid rgba($c-green-4, 1);
+        &:hover {
+            transform: none;
+
+            @include tablet-portrait {
+                transform: none;
+            }
+        }
     }
-  }
+
+    &.is-outlined {
+        border: 1px solid rgba($c-green-4, 0.5);
+
+        &:hover {
+            border: 1px solid rgba($c-green-4, 1);
+        }
+    }
 }
 
 .InfoCard--visual {

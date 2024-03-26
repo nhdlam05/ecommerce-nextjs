@@ -1,4 +1,3 @@
-import DynamicCard, { renderElementByType } from './DynamicCard'
-
-export { renderElementByType }
-export default DynamicCard
+import DynamicCard, { renderElementByType } from './DynamicCard';
+export { renderElementByType };
+export default DynamicCard;

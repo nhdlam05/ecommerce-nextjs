@@ -1,0 +1,27 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.BookingSessionFunnel {
+    position: relative;
+    z-index: 2;
+
+    &:after {
+        content: ' ';
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: translateY(-100%);
+        background: rgba($c-primary, 0.6);
+        opacity: 0;
+        transition: opacity 350ms ease-in-out;
+    }
+
+    &.is-focused {
+        &:after {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

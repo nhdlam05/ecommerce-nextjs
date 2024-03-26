@@ -1,0 +1,42 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.HideKeyboardFooter {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba($c-beige-1, 1),
+        rgba($c-beige-1, 0.29),
+        rgba($c-beige-1, 0)
+    );
+    transition-timing-function: cubic-bezier(0.25, 0, 0, 1);
+    padding-bottom: 10px;
+}
+
+.HideKeyboardFooterAnimation-appear {
+    opacity: 0;
+    transform: translateY(100%);
+}
+.HideKeyboardFooterAnimation-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 100ms, transform 400ms;
+}
+
+html.ios .HideKeyboardFooterAnimation-appear-active {
+    transition: opacity 100ms 170ms, transform 400ms 300ms;
+}
+
+html.ios .HideKeyboardFooterAnimation-exit {
+    opacity: 1;
+}
+html.ios .HideKeyboardFooterAnimation-exit-active {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 100ms 140ms, transform 0.2s 40ms;
+}

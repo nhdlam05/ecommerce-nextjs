@@ -1,58 +1,58 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .ModuleGroup {
-  position: relative;
+    position: relative;
 
-  &.theme-white {
-    .ModuleGroup--title {
-      color: $c-white;
-      & > * {
-        color: $c-white;
-      }
+    &.theme-white {
+        .ModuleGroup--title {
+            color: $c-white;
+            & > * {
+                color: $c-white;
+            }
+        }
+        .ModuleGroup--button {
+            color: $c-white;
+        }
     }
-    .ModuleGroup--button {
-      color: $c-white;
-    }
-  }
 
-  &.theme-dark {
-    .ModuleGroup--title {
-      color: $c-green-4;
+    &.theme-dark {
+        .ModuleGroup--title {
+            color: $c-green-4;
+        }
+        .ModuleGroup--button {
+            color: $c-text;
+        }
     }
-    .ModuleGroup--button {
-      color: $c-text;
-    }
-  }
 }
 
 .ModuleGroup--header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ModuleGroup--title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
 
-  @include mobile {
-    margin-bottom: 10px;
-  }
+    @include mobile {
+        margin-bottom: 10px;
+    }
 }
 
 .ModuleGroup--button {
-  font-size: 18px;
-  color: $c-text;
-  hyphens: manual;
-  line-height: 1.6;
-  @include font-weight('normal');
+    font-size: 18px;
+    color: $c-text;
+    hyphens: manual;
+    line-height: 1.6;
+    @include font-weight('normal');
 
-  &:hover,
-  &:active {
-    text-decoration: underline;
-    opacity: 0.6;
-  }
+    &:hover,
+    &:active {
+        text-decoration: underline;
+        opacity: 0.6;
+    }
 }

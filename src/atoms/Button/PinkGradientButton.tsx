@@ -1,8 +1,8 @@
-import { Props } from './AtomButton'
-import { PinkGradientButtonStyle } from './styles'
+import { Props } from './AtomButton';
+import { PinkGradientButtonStyle } from './styles';
 
-const PinkGradientButton: React.FC<Props> = props => {
-  return <PinkGradientButtonStyle {...props} />
-}
+const PinkGradientButton: React.FC<Props> = (props) => {
+    return <PinkGradientButtonStyle {...props} />;
+};
 
-export default PinkGradientButton
+export default PinkGradientButton;

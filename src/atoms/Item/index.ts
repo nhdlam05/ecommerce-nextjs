@@ -1,5 +1,4 @@
-import Item from './Item'
+import Item from './Item';
+export type { ItemTheme } from './Item';
 
-export type { ItemTheme } from './Item'
-
-export default Item
+export default Item;

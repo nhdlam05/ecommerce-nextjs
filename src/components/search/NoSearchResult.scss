@@ -1,0 +1,27 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.NoSearchResult {
+    .NoSearchResult--signup {
+        .NoSearchResult--signupBtn {
+            margin-left: 15px;
+            margin-top: 3px;
+            width: 250px;
+
+            @include mobile {
+                width: 100%;
+                margin-top: 16px;
+                margin-left: 0px;
+            }
+        }
+
+        form {
+            margin-top: 10px;
+            display: flex;
+            align-items: flex-start;
+
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+    }
+}

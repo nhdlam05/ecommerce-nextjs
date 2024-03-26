@@ -1,3 +1,3 @@
-import ItemGroup from './ItemGroup'
+import ItemGroup from './ItemGroup';
 
-export default ItemGroup
+export default ItemGroup;

@@ -1,130 +1,130 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .Textarea--container {
-  position: relative;
+    position: relative;
 }
 
 .Textarea--content {
-  position: relative;
-  border: 1px solid $bor-default;
-  border-radius: $brad-m;
-  background-color: $c-white;
+    position: relative;
+    border: 1px solid $bor-default;
+    border-radius: $brad-m;
+    background-color: $c-white;
 
-  .Textarea--contentInside {
-    display: flex;
-    justify-content: flex-end;
-    padding: 12px;
-  }
-
-  &.variant-outlined {
-    background-color: transparent;
-    .Textarea {
-      background-color: transparent;
+    .Textarea--contentInside {
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px;
     }
-  }
 
-  &.has-errors {
-    border-color: $c-error;
-  }
-
-  &.has-typingInfo {
-    .Textarea {
-      padding-bottom: 25px;
+    &.variant-outlined {
+        background-color: transparent;
+        .Textarea {
+            background-color: transparent;
+        }
     }
-  }
+
+    &.has-errors {
+        border-color: $c-error;
+    }
+
+    &.has-typingInfo {
+        .Textarea {
+            padding-bottom: 25px;
+        }
+    }
 }
 
 .Textarea {
-  border-radius: $brad-m;
-  width: 100%;
-  background-color: $c-white;
-  resize: none;
-  border: none;
-  transition: $trans-all-default;
-  box-shadow: none;
-  font-size: 18px;
-  -webkit-appearance: none;
-  padding: 20px;
-
-  &:hover,
-  &:focus {
+    border-radius: $brad-m;
+    width: 100%;
+    background-color: $c-white;
+    resize: none;
     border: none;
-  }
-  @include mobile {
-    font-size: 14px;
-    padding: 15px;
-  }
-  &::placeholder {
-    color: $c-text-light;
-  }
+    transition: $trans-all-default;
+    box-shadow: none;
+    font-size: 18px;
+    -webkit-appearance: none;
+    padding: 20px;
+
+    &:hover,
+    &:focus {
+        border: none;
+    }
+    @include mobile {
+        font-size: 14px;
+        padding: 15px;
+    }
+    &::placeholder {
+        color: $c-text-light;
+    }
 }
 
 .Textarea--typingInfo {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  padding: 6px 9px;
-  border-radius: 50px;
-  pointer-events: none;
-  background-color: rgba($c-white, 0.9);
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 6px 9px;
+    border-radius: 50px;
+    pointer-events: none;
+    background-color: rgba($c-white, 0.9);
 
-  transition: all 95ms ease-out;
-
-  @include mobile {
-    bottom: 1px;
-    right: 1px;
-    padding: 3px 6px;
-  }
-
-  .Textarea--typingInfo--active {
-    opacity: 1;
-  }
-  .Textarea--typingInfo--total {
-    opacity: 0.5;
-  }
-
-  .Text {
-    font-size: 14px;
+    transition: all 95ms ease-out;
 
     @include mobile {
-      font-size: 12px;
+        bottom: 1px;
+        right: 1px;
+        padding: 3px 6px;
     }
-  }
 
-  &.is-max {
-    background-color: $c-red;
-
-    box-shadow: $bs-short;
-    display: block;
-    opacity: 1;
-    bottom: 4px;
-    right: 4px;
+    .Textarea--typingInfo--active {
+        opacity: 1;
+    }
+    .Textarea--typingInfo--total {
+        opacity: 0.5;
+    }
 
     .Text {
-      color: $c-white;
-      @include font-weight('medium');
+        font-size: 14px;
+
+        @include mobile {
+            font-size: 12px;
+        }
     }
-  }
+
+    &.is-max {
+        background-color: $c-red;
+
+        box-shadow: $bs-short;
+        display: block;
+        opacity: 1;
+        bottom: 4px;
+        right: 4px;
+
+        .Text {
+            color: $c-white;
+            @include font-weight('medium');
+        }
+    }
 }
 
 .Textarea--safeMessage {
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  right: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
 
-  @include mobile {
-    bottom: -22px;
-  }
+    @include mobile {
+        bottom: -22px;
+    }
 
-  svg {
-    margin-right: 3px;
-  }
+    svg {
+        margin-right: 3px;
+    }
 
-  .Text {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    width: 100%;
-  }
+    .Text {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        width: 100%;
+    }
 }

@@ -1,3 +1,3 @@
-import ClickableComponent from './ClickableComponent'
+import ClickableComponent from './ClickableComponent';
 
-export default ClickableComponent
+export default ClickableComponent;

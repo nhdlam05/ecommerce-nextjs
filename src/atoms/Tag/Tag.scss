@@ -1,44 +1,44 @@
 .Tag {
-  position: relative;
-  display: inline-block;
-  border: 1px solid rgba($c-primary, 0.1);
-  border-radius: 20px;
-  @include font-weight('medium');
-  color: $c-primary;
-  // Sizes
-  &.size-m {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid rgba($c-primary, 0.1);
+    border-radius: 20px;
+    @include font-weight('medium');
+    color: $c-primary;
+    // Sizes
+    &.size-m {
+        margin-right: 10px;
+        margin-bottom: 10px;
 
-    padding: 8px 12px;
-  }
-  &.size-s {
-    padding: 3px 8px;
-
-    .Tag--icon {
-      font-size: 13px;
-      top: 1px;
+        padding: 8px 12px;
     }
-  }
-  &.size-xs {
-    padding: 1px 4px;
+    &.size-s {
+        padding: 3px 8px;
 
-    .Tag--icon {
-      font-size: 11px;
-      top: 0px;
+        .Tag--icon {
+            font-size: 13px;
+            top: 1px;
+        }
     }
-  }
+    &.size-xs {
+        padding: 1px 4px;
 
-  &.v-squared {
-    border-radius: 6px;
-  }
+        .Tag--icon {
+            font-size: 11px;
+            top: 0px;
+        }
+    }
+
+    &.v-squared {
+        border-radius: 6px;
+    }
 }
 
 .Tag--icon {
-  display: inline-block;
-  margin-right: 5px;
-  position: relative;
-  top: 2px;
-  font-size: 15px;
-  line-height: 1;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    font-size: 15px;
+    line-height: 1;
 }

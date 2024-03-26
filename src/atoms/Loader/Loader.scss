@@ -1,59 +1,59 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .Loader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  .MuiCircularProgress-colorPrimary {
-    color: $c-green-3;
-  }
-
-  &.is-fullscreen {
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba($c-beige-1, 0.9);
-  }
-
-  &.is-full {
-    position: absolute;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba($c-white, 0.9);
-  }
-
-  &.is-opaque {
-    background: rgba($c-beige-1, 1);
-  }
-
-  .global_theme-green & {
     .MuiCircularProgress-colorPrimary {
-      color: $c-green-3;
+        color: $c-green-3;
     }
 
     &.is-fullscreen {
-      background: rgba($c-green-1, 0.9);
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($c-beige-1, 0.9);
+    }
+
+    &.is-full {
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($c-white, 0.9);
     }
 
     &.is-opaque {
-      background: rgba($c-green-1, 1);
+        background: rgba($c-beige-1, 1);
     }
-  }
 
-  &.theme-white {
-    .MuiCircularProgress-colorPrimary {
-      color: $c-white;
+    .global_theme-green & {
+        .MuiCircularProgress-colorPrimary {
+            color: $c-green-3;
+        }
 
-      .MuiCircularProgress-svg {
-        color: $c-white;
-      }
+        &.is-fullscreen {
+            background: rgba($c-green-1, 0.9);
+        }
+
+        &.is-opaque {
+            background: rgba($c-green-1, 1);
+        }
     }
-  }
+
+    &.theme-white {
+        .MuiCircularProgress-colorPrimary {
+            color: $c-white;
+
+            .MuiCircularProgress-svg {
+                color: $c-white;
+            }
+        }
+    }
 }

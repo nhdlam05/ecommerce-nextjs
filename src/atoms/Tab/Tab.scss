@@ -1,61 +1,61 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 $paddingVertical: 12px;
 $paddingHorizontal: 16px;
 
 .Tab {
-  background-color: $c-white;
-  display: flex;
-  align-items: center;
-  transition: all 125ms ease;
-  cursor: pointer;
-  white-space: nowrap;
+    background-color: $c-white;
+    display: flex;
+    align-items: center;
+    transition: all 125ms ease;
+    cursor: pointer;
+    white-space: nowrap;
 
-  @include above-mobile {
-    &:hover {
-      background-color: rgba($c-primary, 0.1);
-      &.theme-danger {
-        background-color: rgba($c-red, 0.1);
-      }
+    @include above-mobile {
+        &:hover {
+            background-color: rgba($c-primary, 0.1);
+            &.theme-danger {
+                background-color: rgba($c-red, 0.1);
+            }
+        }
     }
-  }
 
-  &.variant-contained {
-    border: 1.25px solid $c-text;
-  }
-
-  &.variant-outlined {
-    background: transparent;
-  }
-
-  &.size-m {
-    padding: $paddingVertical $paddingHorizontal;
-    border-radius: $brad-xl * 2;
-  }
-
-  &.theme-danger {
-    border-color: $c-red;
-    border: 1px solid $c-red;
-    &.is-active {
-      border: 3px solid $c-red !important;
-      padding: calc($paddingVertical - 2px) $paddingHorizontal;
+    &.variant-contained {
+        border: 1.25px solid $c-text;
     }
-  }
 
-  &.theme-warning {
-    border-color: $c-dark-yellow;
-    border: 1px solid $c-dark-yellow;
-    &.is-active {
-      border: 3px solid $c-dark-yellow !important;
-      padding: calc($paddingVertical - 2px) $paddingHorizontal;
+    &.variant-outlined {
+        background: transparent;
     }
-  }
 
-  &.theme-dark {
-    border: 1px solid $c-primary;
-    &.is-active {
-      border: 3px solid $c-primary !important;
-      padding: calc($paddingVertical - 2px) $paddingHorizontal;
+    &.size-m {
+        padding: $paddingVertical $paddingHorizontal;
+        border-radius: $brad-xl * 2;
     }
-  }
+
+    &.theme-danger {
+        border-color: $c-red;
+        border: 1px solid $c-red;
+        &.is-active {
+            border: 3px solid $c-red !important;
+            padding: calc($paddingVertical - 2px) $paddingHorizontal;
+        }
+    }
+
+    &.theme-warning {
+        border-color: $c-dark-yellow;
+        border: 1px solid $c-dark-yellow;
+        &.is-active {
+            border: 3px solid $c-dark-yellow !important;
+            padding: calc($paddingVertical - 2px) $paddingHorizontal;
+        }
+    }
+
+    &.theme-dark {
+        border: 1px solid $c-primary;
+        &.is-active {
+            border: 3px solid $c-primary !important;
+            padding: calc($paddingVertical - 2px) $paddingHorizontal;
+        }
+    }
 }

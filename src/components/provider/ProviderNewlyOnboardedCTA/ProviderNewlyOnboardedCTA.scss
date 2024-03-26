@@ -1,0 +1,12 @@
+.ProviderNewlyOnboardedCTA {
+    text-align: left;
+
+    .Button--label {
+        margin-left: 12px;
+    }
+
+    &.is-active {
+        opacity: 0.5;
+        cursor: default;
+    }
+}

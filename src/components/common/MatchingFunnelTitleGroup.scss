@@ -1,0 +1,11 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.MatchingFunnelTitleGroup {
+    width: 100%;
+
+    .Title {
+        @include mobile {
+            font-size: 28px;
+        }
+    }
+}

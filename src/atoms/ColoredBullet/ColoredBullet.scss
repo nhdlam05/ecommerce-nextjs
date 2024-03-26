@@ -1,59 +1,59 @@
 .ColoredBullet {
-  position: relative;
-  width: 20px;
-  .ColoredBullet--firstCircle {
-    width: 13px;
-    height: 13px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 100%;
-  }
-
-  .ColoredBullet--secondCircle {
+    position: relative;
     width: 20px;
-    height: 20px;
-    display: block;
-    border-radius: 100%;
-  }
-
-  &.theme-success {
     .ColoredBullet--firstCircle {
-      background: #27ae60;
+        width: 13px;
+        height: 13px;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
     }
 
     .ColoredBullet--secondCircle {
-      background: #b9d2a8;
-    }
-  }
-
-  &.theme-warning {
-    .ColoredBullet--firstCircle {
-      background: #f2994a;
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-radius: 100%;
     }
 
-    .ColoredBullet--secondCircle {
-      background: #f2c94c;
-    }
-  }
-  &.theme-danger {
-    .ColoredBullet--firstCircle {
-      background: #eb5757;
+    &.theme-success {
+        .ColoredBullet--firstCircle {
+            background: #27ae60;
+        }
+
+        .ColoredBullet--secondCircle {
+            background: #b9d2a8;
+        }
     }
 
-    .ColoredBullet--secondCircle {
-      background: #f9b4ab;
-    }
-  }
-  &.theme-purple {
-    .ColoredBullet--firstCircle {
-      background: #8467d7;
-    }
+    &.theme-warning {
+        .ColoredBullet--firstCircle {
+            background: #f2994a;
+        }
 
-    .ColoredBullet--secondCircle {
-      background: #c2b3eb;
+        .ColoredBullet--secondCircle {
+            background: #f2c94c;
+        }
     }
-  }
+    &.theme-danger {
+        .ColoredBullet--firstCircle {
+            background: #eb5757;
+        }
+
+        .ColoredBullet--secondCircle {
+            background: #f9b4ab;
+        }
+    }
+    &.theme-purple {
+        .ColoredBullet--firstCircle {
+            background: #8467d7;
+        }
+
+        .ColoredBullet--secondCircle {
+            background: #c2b3eb;
+        }
+    }
 }

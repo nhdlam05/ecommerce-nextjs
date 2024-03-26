@@ -1,29 +1,29 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .ItemGroup {
-  overflow: hidden;
-  margin-bottom: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
 
-  @include mobile {
-    margin-bottom: 10px;
-  }
+    @include mobile {
+        margin-bottom: 10px;
+    }
 
-  &.no-margin {
-    margin: 0;
-  }
+    &.no-margin {
+        margin: 0;
+    }
 
-  &.border-l {
-    border-radius: $brad-l;
-  }
+    &.border-l {
+        border-radius: $brad-l;
+    }
 
-  &.border-xl {
-    border-radius: $brad-xl;
-  }
+    &.border-xl {
+        border-radius: $brad-xl;
+    }
 
-  &.elevation-s {
-    box-shadow: $bs-short;
-  }
-  &.elevation-m {
-    box-shadow: $bs-large;
-  }
+    &.elevation-s {
+        box-shadow: $bs-short;
+    }
+    &.elevation-m {
+        box-shadow: $bs-large;
+    }
 }

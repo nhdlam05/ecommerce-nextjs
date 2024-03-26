@@ -1,57 +1,57 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 $padding: 15px;
 $paddingMobile: 12px;
 .Callout {
-  border-radius: $brad-m;
-  border: 1px solid $bor-default;
-  padding: $padding;
-  padding-bottom: $padding - 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  justify-content: space-between;
-
-  .Callout--startSlotWrapper {
+    border-radius: $brad-m;
+    border: 1px solid $bor-default;
+    padding: $padding;
+    padding-bottom: $padding - 4px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-  }
+    text-align: left;
+    justify-content: space-between;
 
-  @include mobile {
-    padding: $paddingMobile;
-    padding-bottom: $paddingMobile - 4px;
-  }
-
-  &.theme-purple {
-    background-color: $c-purple-4;
-    .Title,
-    .Text,
-    a {
-      color: $c-white;
+    .Callout--startSlotWrapper {
+        display: flex;
+        align-items: center;
     }
-  }
+
+    @include mobile {
+        padding: $paddingMobile;
+        padding-bottom: $paddingMobile - 4px;
+    }
+
+    &.theme-purple {
+        background-color: $c-purple-4;
+        .Title,
+        .Text,
+        a {
+            color: $c-white;
+        }
+    }
 }
 
 .Callout--icon {
-  display: block;
-  margin-right: $padding * 0.5;
-  font-size: 30px;
+    display: block;
+    margin-right: $padding * 0.5;
+    font-size: 30px;
 
-  &.iconSize-m {
-    font-size: 18px;
+    &.iconSize-m {
+        font-size: 18px;
 
-    @include mobile {
-      margin-right: $paddingMobile * 0.5;
+        @include mobile {
+            margin-right: $paddingMobile * 0.5;
+        }
     }
-  }
-  &.iconSize-l {
-    font-size: 28px;
-    margin-right: $padding;
+    &.iconSize-l {
+        font-size: 28px;
+        margin-right: $padding;
 
-    @include mobile {
-      font-size: 26px;
-      margin-right: $paddingMobile;
+        @include mobile {
+            font-size: 26px;
+            margin-right: $paddingMobile;
+        }
     }
-  }
 }

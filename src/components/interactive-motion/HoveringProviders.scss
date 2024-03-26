@@ -1,0 +1,153 @@
+@import 'aepsy-ui/styles/utils.scss';
+$baseS: 200px;
+$baseS_tablet: 150px;
+$baseS_mobile: 100px;
+
+$wD: 30; // wiggleDistance
+
+@keyframes wiggle {
+    0% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+    100% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+}
+
+@keyframes wiggle2 {
+    0% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+    100% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+}
+@keyframes wiggle3 {
+    0% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+    100% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+}
+@keyframes wiggle4 {
+    0% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+    100% {
+        transform: translateX((random($wD * 2) - $wD) + px)
+            translateY((random($wD * 2) - $wD) + px);
+    }
+}
+
+.HoveringProviders {
+    position: relative;
+    z-index: -1;
+    // background:rgba(red, 0.2);
+    padding-top: $baseS * 0.5;
+    // min-height: 30vh;
+    min-height: 400px;
+
+    @media (max-height: (1000px)) {
+        min-height: 350px;
+    }
+    @media (max-height: (800px)) {
+        min-height: 250px;
+        padding-top: 0;
+    }
+
+    @include tablet {
+        padding-top: $baseS_tablet * 0.5;
+    }
+
+    @include mobile {
+        padding-top: $baseS_mobile * 0.5;
+        min-height: 230px;
+    }
+}
+
+.HoveringProvidersAvatar {
+    position: absolute;
+    margin-top: -$baseS * 0.5;
+    margin-left: -$baseS * 0.5;
+    will-change: transform;
+    transition: all 500ms $light-elastic;
+    left: 50%;
+    top: 50%;
+
+    @include tablet {
+        margin-top: -$baseS_tablet * 0.5;
+        margin-left: -$baseS_tablet * 0.5;
+    }
+
+    @include mobile {
+        margin-top: -$baseS_mobile * 0.5;
+        margin-left: -$baseS_mobile * 0.5;
+    }
+
+    &:nth-child(1n) {
+        .HoveringProvidersAvatar--image {
+            animation-name: wiggle;
+        }
+    }
+
+    &:nth-child(2n + 1) {
+        .HoveringProvidersAvatar--image {
+            animation-name: wiggle2;
+        }
+    }
+
+    &:nth-child(3n + 1) {
+        .HoveringProvidersAvatar--image {
+            animation-name: wiggle3;
+        }
+    }
+    &:nth-child(4n + 1) {
+        .HoveringProvidersAvatar--image {
+            animation-name: wiggle4;
+        }
+    }
+}
+
+.HoveringProvidersAvatar--image {
+    width: $baseS;
+    height: $baseS;
+    border-radius: $baseS;
+    box-shadow: $bs-large;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    will-change: transform;
+    transition: all 500ms $light-elastic;
+    position: relative;
+    animation: wiggle 10s ease-in-out infinite alternate;
+
+    @media (max-height: (1000px)) {
+        width: $baseS_tablet;
+        height: $baseS_tablet;
+        border-radius: $baseS_tablet;
+    }
+    @media (max-height: (800px)) {
+        width: $baseS_tablet;
+        height: $baseS_tablet;
+        border-radius: $baseS_tablet;
+    }
+    @include tablet {
+        width: $baseS_tablet;
+        height: $baseS_tablet;
+        border-radius: $baseS_tablet;
+    }
+
+    @include mobile {
+        width: $baseS_mobile;
+        height: $baseS_mobile;
+        border-radius: $baseS_mobile;
+    }
+}

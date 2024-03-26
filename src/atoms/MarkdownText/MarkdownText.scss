@@ -1,0 +1,27 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+@mixin baseText() {
+    color: $c-green-4;
+    text-align: left;
+}
+
+.MarkdownText {
+    // @include baseText();
+
+    a {
+        color: $c-rose-4 !important;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        // margin-bottom: 15px;
+    }
+
+    ul li,
+    ol li {
+        line-height: 1.4;
+    }
+}

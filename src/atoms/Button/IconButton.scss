@@ -1,83 +1,83 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .IconButton {
-  padding: 6px;
-  height: auto;
-  border-radius: 8px;
-  transition: all 175ms $slow-out;
-  position: relative;
+    padding: 6px;
+    height: auto;
+    border-radius: 8px;
+    transition: all 175ms $slow-out;
+    position: relative;
 
-  &.has-no-background {
-    &:hover {
-      background: transparent !important;
+    &.has-no-background {
+        &:hover {
+            background: transparent !important;
+        }
     }
-  }
 
-  &.is-loading {
-    &:hover {
-      background: transparent !important;
+    &.is-loading {
+        &:hover {
+            background: transparent !important;
+        }
     }
-  }
 
-  @include above-mobile {
-    &:hover {
-      background-color: $c-rose-1;
+    @include above-mobile {
+        &:hover {
+            background-color: $c-rose-1;
+        }
     }
-  }
 
-  // &:active {
-  //     margin-top: -2px;
-  // }
+    // &:active {
+    //     margin-top: -2px;
+    // }
 
-  &.theme-primary {
-    &.is-active {
-      border: 1px solid $c-rose-4;
+    &.theme-primary {
+        &.is-active {
+            border: 1px solid $c-rose-4;
+        }
+        svg {
+            color: $c-rose-4;
+        }
     }
-    svg {
-      color: $c-rose-4;
+
+    &.theme-white {
+        &.is-active {
+            border: 1px solid $c-white;
+        }
+        svg {
+            color: $c-white;
+        }
     }
-  }
 
-  &.theme-white {
-    &.is-active {
-      border: 1px solid $c-white;
+    &.theme-dark {
+        &.is-active {
+            border: 1px solid $c-green-4;
+        }
+        svg {
+            color: $c-green-4;
+        }
     }
-    svg {
-      color: $c-white;
+
+    &.size-xs {
+        font-size: 16px;
     }
-  }
 
-  &.theme-dark {
-    &.is-active {
-      border: 1px solid $c-green-4;
+    &.size-s {
+        font-size: 20px;
     }
-    svg {
-      color: $c-green-4;
+
+    &.size-m {
+        font-size: 22px;
     }
-  }
 
-  &.size-xs {
-    font-size: 16px;
-  }
-
-  &.size-s {
-    font-size: 20px;
-  }
-
-  &.size-m {
-    font-size: 22px;
-  }
-
-  &.size-l {
-    font-size: 28px;
-  }
-
-  &[disabled] {
-    opacity: 0.3 !important;
-
-    &:hover,
-    &:active {
-      transform: none;
+    &.size-l {
+        font-size: 28px;
     }
-  }
+
+    &[disabled] {
+        opacity: 0.3 !important;
+
+        &:hover,
+        &:active {
+            transform: none;
+        }
+    }
 }

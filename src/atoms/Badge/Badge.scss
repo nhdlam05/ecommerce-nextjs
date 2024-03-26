@@ -1,264 +1,264 @@
-@import 'shop-ui/styles/utils.scss';
+@import 'aepsy-ui/styles/utils.scss';
 
 .Badge {
-  @include font-weight('medium');
-  // white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 6px;
-
-  &.direction-default {
-    margin-right: 6px;
-  }
-  &.direction-reverse {
-    margin-left: 6px;
-  }
-
-  &.has-more {
-    cursor: pointer;
-    transition: all 75ms ease-in-out;
-    will-change: transform;
-
-    @include above-mobile {
-      &:hover {
-        opacity: 0.7;
-      }
-    }
-
-    &:active {
-      opacity: 0.5;
-      transform: scale(0.95);
-    }
-  }
-
-  a {
-    text-decoration: underline;
-
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-
-  // SIZE
-  &.size-ml {
-    @include font-size(16px);
-    padding: 9px 20px;
-    border-radius: 28px;
-  }
-
-  &.size-l {
-    @include font-size(18px);
-    padding: 9px 20px;
-    border-radius: 17px;
-  }
-
-  &.size-m {
-    @include font-size(16px);
-    padding: 5px 12px;
-    border-radius: 13px;
-  }
-
-  &.size-s {
-    @include font-size(15px);
-    padding: 3px 6px;
-    border-radius: 6px;
+    @include font-weight('medium');
+    // white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
 
     &.direction-default {
-      margin-right: 3px;
+        margin-right: 6px;
     }
     &.direction-reverse {
-      margin-left: 3px;
+        margin-left: 6px;
     }
-  }
 
-  &.size-tiny {
-    @include font-size(12px);
-    padding: 0px 8px;
-    border-radius: 8px;
-    height: 20px;
-  }
+    &.has-more {
+        cursor: pointer;
+        transition: all 75ms ease-in-out;
+        will-change: transform;
 
-  &.size-xs {
-    @include font-size(14px);
-    padding: 0px 6px;
-    border-radius: 5px;
+        @include above-mobile {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
 
-    &.direction-default {
-      margin-right: 3px;
+        &:active {
+            opacity: 0.5;
+            transform: scale(0.95);
+        }
     }
-    &.direction-reverse {
-      margin-left: 3px;
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
-  }
 
-  // ALIGN
-  &.align-center {
-    // display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &.align-left {
-    // display: flex;
-    text-align: left;
-  }
-
-  // Variant
-  &.v-pink-gradient {
-    color: $c-white;
-    background: $c-pink-gradient;
-    box-shadow: $bs-short;
-  }
-
-  &.v-float {
-    box-shadow: $bs-light;
-    border: none;
-    color: $c-green-4;
-  }
-  &.v-success {
-    background-color: $c-success;
-    color: $c-green-4;
-  }
-
-  &.v-warning {
-    background-color: $c-warning;
-    color: $c-green-4;
-  }
-  &.v-error {
-    background-color: $c-caution;
-    color: $c-green-4;
-  }
-
-  &.v-info {
-    background-color: $c-green-2;
-    color: $c-green-4;
-  }
-
-  &.v-new {
-    background-color: $c-purple-2;
-    color: $c-green-4;
-  }
-
-  &.v-premium {
-    background-color: $c-premium;
-    color: $c-white;
-  }
-
-  &.v-notification {
-    background-color: $c-notification;
-    color: $c-white;
-  }
-
-  &.v-outlined {
-    background-color: transparent;
-    color: $c-green-4;
-    border: 1px solid rgba($c-primary, 0.15);
-  }
-
-  &.v-cta {
-    background-color: transparent;
-    color: $c-rose-4;
-    border: 1px solid rgba($c-cta, 0.15);
-    cursor: pointer;
-    &:hover {
-      opacity: 0.8;
+    // SIZE
+    &.size-ml {
+        @include font-size(16px);
+        padding: 9px 20px;
+        border-radius: 28px;
     }
-  }
 
-  &.v-minsk {
-    background-color: #423863;
-    color: $c-white;
-  }
-
-  &.v-highlight {
-    background-color: $c-rose-1;
-    color: $c-green-4;
-  }
-
-  &.v-sky {
-    background-color: $c-blue-1;
-    color: $c-green-4;
-  }
-
-  &.v-white {
-    background-color: $c-white;
-    color: $c-green-4;
-  }
-
-  &.v-beige {
-    background-color: $c-beige-1;
-    color: $c-green-4;
-  }
-
-  // DISABLED
-  &.is-disabled {
-    opacity: 0.3 !important;
-    pointer-events: none;
-  }
-
-  &.clickable {
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.8;
+    &.size-l {
+        @include font-size(18px);
+        padding: 9px 20px;
+        border-radius: 17px;
     }
-  }
+
+    &.size-m {
+        @include font-size(16px);
+        padding: 5px 12px;
+        border-radius: 13px;
+    }
+
+    &.size-s {
+        @include font-size(15px);
+        padding: 3px 6px;
+        border-radius: 6px;
+
+        &.direction-default {
+            margin-right: 3px;
+        }
+        &.direction-reverse {
+            margin-left: 3px;
+        }
+    }
+
+    &.size-tiny {
+        @include font-size(12px);
+        padding: 0px 8px;
+        border-radius: 8px;
+        height: 20px;
+    }
+
+    &.size-xs {
+        @include font-size(14px);
+        padding: 0px 6px;
+        border-radius: 5px;
+
+        &.direction-default {
+            margin-right: 3px;
+        }
+        &.direction-reverse {
+            margin-left: 3px;
+        }
+    }
+
+    // ALIGN
+    &.align-center {
+        // display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &.align-left {
+        // display: flex;
+        text-align: left;
+    }
+
+    // Variant
+    &.v-pink-gradient {
+        color: $c-white;
+        background: $c-pink-gradient;
+        box-shadow: $bs-short;
+    }
+
+    &.v-float {
+        box-shadow: $bs-light;
+        border: none;
+        color: $c-green-4;
+    }
+    &.v-success {
+        background-color: $c-success;
+        color: $c-green-4;
+    }
+
+    &.v-warning {
+        background-color: $c-warning;
+        color: $c-green-4;
+    }
+    &.v-error {
+        background-color: $c-caution;
+        color: $c-green-4;
+    }
+
+    &.v-info {
+        background-color: $c-green-2;
+        color: $c-green-4;
+    }
+
+    &.v-new {
+        background-color: $c-purple-2;
+        color: $c-green-4;
+    }
+
+    &.v-premium {
+        background-color: $c-premium;
+        color: $c-white;
+    }
+
+    &.v-notification {
+        background-color: $c-notification;
+        color: $c-white;
+    }
+
+    &.v-outlined {
+        background-color: transparent;
+        color: $c-green-4;
+        border: 1px solid rgba($c-primary, 0.15);
+    }
+
+    &.v-cta {
+        background-color: transparent;
+        color: $c-rose-4;
+        border: 1px solid rgba($c-cta, 0.15);
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.v-minsk {
+        background-color: #423863;
+        color: $c-white;
+    }
+
+    &.v-highlight {
+        background-color: $c-rose-1;
+        color: $c-green-4;
+    }
+
+    &.v-sky {
+        background-color: $c-blue-1;
+        color: $c-green-4;
+    }
+
+    &.v-white {
+        background-color: $c-white;
+        color: $c-green-4;
+    }
+
+    &.v-beige {
+        background-color: $c-beige-1;
+        color: $c-green-4;
+    }
+
+    // DISABLED
+    &.is-disabled {
+        opacity: 0.3 !important;
+        pointer-events: none;
+    }
+
+    &.clickable {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
 
 .Badge--startSlot {
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
 }
 
 .Badge--endSlot {
-  display: flex;
-  align-items: center;
-  margin-left: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
 }
 
 .Badge--more {
-  display: flex;
-  align-items: center;
-  opacity: 0.5;
-  margin-left: 5px;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    margin-left: 5px;
 }
 
 .Badge--remove {
-  position: relative;
-  display: flex;
-  align-items: center;
-  // background-color: red;
-  margin-left: 5px;
-  transition: opacity 100ms ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    // background-color: red;
+    margin-left: 5px;
+    transition: opacity 100ms ease;
 
-  &::after {
-    $s: -5px;
-    content: ' ';
-    position: absolute;
-    top: $s;
-    left: 0;
-    right: $s * 2;
-    bottom: $s;
-    z-index: 3;
-  }
-
-  &::before {
-    content: ' | ';
-    opacity: 0.1;
-  }
-
-  &:hover,
-  &:active {
-    opacity: 0.5;
-  }
-
-  &.is-add {
-    svg {
-      will-change: transform;
-      display: block;
-      transform: rotate(45deg);
+    &::after {
+        $s: -5px;
+        content: ' ';
+        position: absolute;
+        top: $s;
+        left: 0;
+        right: $s * 2;
+        bottom: $s;
+        z-index: 3;
     }
-  }
+
+    &::before {
+        content: ' | ';
+        opacity: 0.1;
+    }
+
+    &:hover,
+    &:active {
+        opacity: 0.5;
+    }
+
+    &.is-add {
+        svg {
+            will-change: transform;
+            display: block;
+            transform: rotate(45deg);
+        }
+    }
 }

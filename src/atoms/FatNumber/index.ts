@@ -1,3 +1,3 @@
-import FatNumber from './FatNumber'
+import FatNumber from './FatNumber';
 
-export default FatNumber
+export default FatNumber;

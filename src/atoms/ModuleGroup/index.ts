@@ -1,3 +1,3 @@
-import ModuleGroup from './ModuleGroup'
+import ModuleGroup from './ModuleGroup';
 
-export default ModuleGroup
+export default ModuleGroup;

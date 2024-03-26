@@ -1,0 +1,43 @@
+@import 'aepsy-ui/styles/utils.scss';
+
+.FullGradientLayout--background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    &.theme-primary {
+        background-color: $c-gradient-green-median;
+        background-image: $c-gradient-green;
+    }
+
+    &.theme-violet {
+        background: linear-gradient(
+            30.17deg,
+            rgba(0, 0, 143, 0.7) -12.18%,
+            rgba(192, 192, 237, 0.7) 147.57%
+        );
+        opacity: 0.9;
+    }
+
+    &.theme-mint {
+        background: linear-gradient(
+            30.17deg,
+            rgba(0, 135, 100, 0.7) -12.18%,
+            rgba(212, 235, 229, 0.7) 147.57%
+        );
+        opacity: 0.9;
+    }
+
+    &.height-third {
+        height: 35%;
+    }
+
+    &.height-half {
+        height: 50%;
+    }
+}
