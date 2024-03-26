@@ -39,7 +39,7 @@ import AuthGuard from "../components/auth/AuthGuard";
 import AclGuard from "../components/auth/AclGuard";
 
 type ExtendedAppProps = AppProps & {
-  Component: NextPage
+  Component: any
 }
 
 type GuardProps = {
@@ -76,8 +76,8 @@ export default function App(props: ExtendedAppProps) {
 
   const { settings } = useSettings()
 
-  // Variables
-  const getLayout = Component.getLayout ?? (page => <>{page}</>)
+  //Variables
+  const getLayout = Component.getLayout ?? ((page: any) => <>{page}</>)
 
   const setConfig = Component.setConfig ?? undefined
 
