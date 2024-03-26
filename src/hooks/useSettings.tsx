@@ -1,4 +1,4 @@
 import { useContext } from 'react'
-import { SettingsContext, SettingsContextValue } from 'src/contexts/SettingsContext'
+import { SettingsContext, SettingsContextValue } from 'contexts/SettingsContext'
 
 export const useSettings = (): SettingsContextValue => useContext(SettingsContext)

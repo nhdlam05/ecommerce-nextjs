@@ -1,5 +1,5 @@
 // ** Type Imports
-import { Skin } from 'src/types/layouts'
+import { Skin } from 'types/layouts'
 import { OwnerStateThemeType } from '.'
 
 const Card = (skin: Skin) => {

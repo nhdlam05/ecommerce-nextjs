@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // ** React Imports
 import { ReactNode } from 'react'
 
 // ** Types
-import type { ACLObj } from 'src/configs/acl'
+import type { ACLObj } from 'configs/acl'
 
 interface AclGuardProps {
   children: ReactNode
@@ -13,7 +14,7 @@ interface AclGuardProps {
 
 const AclGuard = (props: AclGuardProps) => {
   // ** Props
-  const {children, guestGuard = false, authGuard = true } = props
+  const { aclAbilities, children, guestGuard = false, authGuard = true } = props
 
   return <>{children}</>
 }

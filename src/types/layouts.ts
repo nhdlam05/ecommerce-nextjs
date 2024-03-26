@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { AppBarProps } from '@mui/material/AppBar'
 import { Theme, SxProps, PaletteMode } from '@mui/material'
 import { SwipeableDrawerProps } from '@mui/material/SwipeableDrawer'
-import { Settings } from 'src/contexts/SettingsContext'
+import { Settings } from 'contexts/SettingsContext'
 
 export type Layout = 'vertical' | 'horizontal' | 'blank' | 'blankWithAppBar'
 
